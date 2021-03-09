@@ -1,0 +1,13 @@
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\bin\Debug\netcoreapp3.1\Lab2MPP.exe
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\bin\Debug\netcoreapp3.1\Lab2MPP.deps.json
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\bin\Debug\netcoreapp3.1\Lab2MPP.runtimeconfig.json
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\bin\Debug\netcoreapp3.1\Lab2MPP.runtimeconfig.dev.json
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\bin\Debug\netcoreapp3.1\Lab2MPP.dll
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\bin\Debug\netcoreapp3.1\Lab2MPP.pdb
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.csprojAssemblyReference.cache
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.AssemblyInfoInputs.cache
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.AssemblyInfo.cs
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.csproj.CoreCompileInputs.cache
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.dll
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.pdb
+C:\Users\razva\source\repos\Lab2MPP\Lab2MPP\obj\Debug\netcoreapp3.1\Lab2MPP.genruntimeconfig.cache
