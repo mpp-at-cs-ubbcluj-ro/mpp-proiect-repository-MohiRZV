@@ -1,0 +1,38 @@
+09 Mar 2021 13:49:31,950 INFO  repository.ArtistRepo 23 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+09 Mar 2021 13:49:31,955 TRACE repository.ArtistRepo 29 add - Enter saving task Artist{name='Avicii', genre='Dance'}
+09 Mar 2021 13:49:31,955 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+09 Mar 2021 13:49:31,956 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+09 Mar 2021 13:49:31,956 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+09 Mar 2021 13:49:31,956 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+09 Mar 2021 13:49:31,956 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+09 Mar 2021 13:49:32,411 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1349883)
+09 Mar 2021 13:49:32,495 TRACE repository.ArtistRepo 35 add - Saved 1 instances
+09 Mar 2021 13:49:32,496 TRACE repository.ArtistRepo 40 add - Exit
+09 Mar 2021 13:49:32,496 TRACE repository.ArtistRepo 46 update - Enter update task Artist{name='David Guetta', genre='Dance'}
+09 Mar 2021 13:49:32,496 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+09 Mar 2021 13:49:32,496 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1349883)
+09 Mar 2021 13:49:32,497 TRACE repository.ArtistRepo 53 update - Updated 0 instances
+09 Mar 2021 13:49:32,497 TRACE repository.ArtistRepo 58 update - Exit
+09 Mar 2021 13:49:32,498 TRACE repository.ArtistRepo 64 findArtistByGenre - Enter
+09 Mar 2021 13:49:32,498 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+09 Mar 2021 13:49:32,498 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1349883)
+09 Mar 2021 13:49:32,499 TRACE repository.ArtistRepo 82 findArtistByGenre - Exit with([Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}])
+09 Mar 2021 13:59:47,389 INFO  repository.ArtistRepo 23 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+09 Mar 2021 13:59:48,652 TRACE repository.ArtistRepo 29 add - Enter saving task Artist{name='Avicii', genre='Dance'}
+09 Mar 2021 13:59:48,653 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+09 Mar 2021 13:59:48,653 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+09 Mar 2021 13:59:48,653 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+09 Mar 2021 13:59:48,654 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+09 Mar 2021 13:59:48,654 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+09 Mar 2021 13:59:48,807 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1349883)
+09 Mar 2021 13:59:48,988 TRACE repository.ArtistRepo 35 add - Saved 1 instances
+09 Mar 2021 13:59:48,988 TRACE repository.ArtistRepo 40 add - Exit
+09 Mar 2021 13:59:48,988 TRACE repository.ArtistRepo 46 update - Enter update task Artist{name='David Guetta', genre='Dance'}
+09 Mar 2021 13:59:48,988 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+09 Mar 2021 13:59:48,989 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1349883)
+09 Mar 2021 13:59:48,989 TRACE repository.ArtistRepo 53 update - Updated 0 instances
+09 Mar 2021 13:59:48,989 TRACE repository.ArtistRepo 58 update - Exit
+09 Mar 2021 13:59:48,989 TRACE repository.ArtistRepo 64 findArtistByGenre - Enter
+09 Mar 2021 13:59:48,989 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+09 Mar 2021 13:59:48,990 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1349883)
+09 Mar 2021 13:59:48,990 TRACE repository.ArtistRepo 82 findArtistByGenre - Exit with([Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}, Artist{name='Avicii', genre='Dance'}])

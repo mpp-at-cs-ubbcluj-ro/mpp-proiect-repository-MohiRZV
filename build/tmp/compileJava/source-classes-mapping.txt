@@ -1,7 +1,9 @@
 repository/FestivalRepo.java
  repository.FestivalRepo
-ui/Main.java
- ui.Main
+jdbcUtils/JdbcUtils.java
+ jdbcUtils.JdbcUtils
+domain/Artist.java
+ domain.Artist
 repository/CustomerRepoInterface.java
  repository.CustomerRepoInterface
 repository/TicketRepoInterface.java
@@ -18,15 +20,15 @@ repository/Repository.java
  repository.Repository
 domain/Entity.java
  domain.Entity
-repository/ArtistRepo.java
- repository.ArtistRepo
+domain/Ticket.java
+ domain.Ticket
 repository/CustomerRepo.java
  repository.CustomerRepo
 repository/TicketRepo.java
  repository.TicketRepo
 domain/Festival.java
  domain.Festival
-domain/Ticket.java
- domain.Ticket
-domain/Artist.java
- domain.Artist
+repository/ArtistRepo.java
+ repository.ArtistRepo
+ui/Main.java
+ ui.Main

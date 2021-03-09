@@ -13,4 +13,36 @@ public class Ticket extends Entity<Long>{
         this.client = client;
         this.seats = seats;
     }
+
+    public Festival getFestival() {
+        return festival;
+    }
+
+    public void setFestival(Festival festival) {
+        this.festival = festival;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Customer getClient() {
+        return client;
+    }
+
+    public void setClient(Customer client) {
+        this.client = client;
+    }
+
+    public Integer getSeats() {
+        return seats;
+    }
+
+    public void setSeats(Integer seats) {
+        this.seats = seats;
+    }
 }
