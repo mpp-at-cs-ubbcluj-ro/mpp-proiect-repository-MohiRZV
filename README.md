@@ -6,4 +6,10 @@ branch labInterfaceDomainJava - interfetele de repo si clasele din domain in jav
 
 branch labInterfaceDomainCSharp - interfetele de repo si clasele din domain in c#
 
-branc lab3DBArtist - tema din timpul laboratorului 3
+branch lab3DBArtist - tema din timpul laboratorului 3
+
+branch labInterfaceDomainJava - tema pentru lab3 cu implementare repo in Java
+
+branch labInterfaceDomainCSharp - tema pentru lab3 cu implementare repo in C#
+
+branch lab4Configs - tema din timpul laboratorului 4
