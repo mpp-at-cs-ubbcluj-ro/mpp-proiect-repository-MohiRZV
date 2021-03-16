@@ -1,21 +1,21 @@
 package domain;
 
-import java.time.LocalDateTime;
-import java.util.List;
+
+import java.sql.Date;
 
 public class Festival extends Entity<Long>{
-    private LocalDateTime date;
+    private Date date;
     private String location;
     private String name;
     private String genre;
     private Long seats;
-    private List<Artist> artists;
-    //TODO one artist/show
-    public LocalDateTime getDate() {
+    private Artist artist;
+
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -51,21 +51,21 @@ public class Festival extends Entity<Long>{
         this.seats = seats;
     }
 
-    public List<Artist> getArtists() {
-        return artists;
+    public Artist getArtist() {
+        return artist;
     }
 
-    public void setArtists(List<Artist> artists) {
-        this.artists = artists;
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
-    public Festival(Long id, LocalDateTime date, String location, String name, String genre, Long seats, List<Artist> artists) {
+    public Festival(Long id, Date date, String location, String name, String genre, Long seats, Artist artist) {
         super(id);
         this.date = date;
         this.location = location;
         this.name = name;
         this.genre = genre;
         this.seats=seats;
-        this.artists = artists;
+        this.artist = artist;
     }
 }

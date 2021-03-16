@@ -5,7 +5,6 @@ import jdbcUtils.JdbcUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.xml.transform.Result;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,7 +15,7 @@ import java.util.Properties;
 
 public class ArtistRepo implements ArtistRepoInterface{
 
-    private JdbcUtils dbUtils;
+    private final JdbcUtils dbUtils;
 
     private static final Logger logger= LogManager.getLogger();
     public ArtistRepo(Properties props) {
@@ -81,5 +80,67 @@ public class ArtistRepo implements ArtistRepoInterface{
         }
         logger.traceExit(artists);
         return artists;
+    }
+
+    @Override
+    public Artist getOne(Long id) {
+        logger.traceEntry();
+        Connection con=dbUtils.getConnection();
+        Artist artist=null;
+        try(PreparedStatement preStmt=con.prepareStatement("select * from artist where id=?")){
+            preStmt.setLong(1,id);
+            try(ResultSet result=preStmt.executeQuery()){
+                while(result.next()){
+                    Long i=result.getLong("id");
+                    String name=result.getString("name");
+                    String gen=result.getString("genre");
+                    artist=new Artist(i,name,gen);
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB"+ex);
+        }
+        logger.traceExit(artist);
+        return artist;
+    }
+
+    @Override
+    public Iterable<Artist> getAll() {
+        logger.traceEntry();
+        Connection con=dbUtils.getConnection();
+        List<Artist> artists=new ArrayList<>();
+        try(PreparedStatement preStmt=con.prepareStatement("select * from artist")){
+            try(ResultSet result=preStmt.executeQuery()){
+                while(result.next()){
+                    Long id=result.getLong("id");
+                    String name=result.getString("name");
+                    String gen=result.getString("genre");
+                    Artist artist=new Artist(id,name,gen);
+                    artists.add(artist);
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB"+ex);
+        }
+        logger.traceExit(artists);
+        return artists;
+    }
+
+    @Override
+    public Artist delete(Long id) {
+        logger.traceEntry();
+        Connection con=dbUtils.getConnection();
+        List<Artist> artists=new ArrayList<>();
+        try(PreparedStatement preStmt=con.prepareStatement("delete from artist where id=?")){
+            preStmt.setLong(1,id);
+            preStmt.executeUpdate();
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB"+ex);
+        }
+        logger.traceExit(artists);
+        return null;
     }
 }
