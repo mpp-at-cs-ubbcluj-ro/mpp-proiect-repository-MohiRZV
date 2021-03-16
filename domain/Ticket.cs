@@ -14,9 +14,9 @@ namespace Lab2MPP.domain
             this.seats = seats;
         }
 
-        private Festival festival { get; set; }
-        private double price { get; set; }
-        private Customer client { get; set; }
-        private int seats { get; set; }
+        public Festival festival { get; set; }
+        public double price { get; set; }
+        public Customer client { get; set; }
+        public int seats { get; set; }
     }
 }

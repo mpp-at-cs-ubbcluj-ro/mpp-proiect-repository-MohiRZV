@@ -11,6 +11,6 @@ namespace Lab2MPP.domain
             this.id = id;
         }
 
-        private ID id { get; set; }
+        public ID id { get; set; }
     }
 }

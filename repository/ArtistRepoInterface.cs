@@ -7,5 +7,6 @@ namespace Lab2MPP.repository
 {
     interface ArtistRepoInterface:RepositoryInterface<long,Artist>
     {
+        
     }
 }

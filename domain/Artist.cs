@@ -13,7 +13,7 @@ namespace Lab2MPP.domain
             this.genre = genre;
         }
 
-        private string name { get; set; }
-        private string genre { get; set; }
+        public string name { get; set; }
+        public string genre { get; set; }
     }
 }
