@@ -13,3 +13,7 @@ branch labInterfaceDomainJava - tema pentru lab3 cu implementare repo in Java
 branch labInterfaceDomainCSharp - tema pentru lab3 cu implementare repo in C#
 
 branch lab4Configs - tema din timpul laboratorului 4
+
+branch labServiceUICSharp - tema pentru laboratorul 5, cu implementare service si UI in c#
+
+branch labServiceUiJava - tema pentru laboratorul 5, cu implementare service si UI in Java
