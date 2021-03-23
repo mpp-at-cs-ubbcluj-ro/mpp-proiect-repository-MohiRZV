@@ -1094,3 +1094,1939 @@
 16 Mar 2021 08:14:23,055 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
 16 Mar 2021 08:14:23,056 TRACE repository.TicketRepo 108 getClient - Exit
 16 Mar 2021 08:14:23,056 TRACE repository.TicketRepo 184 getAll - Exit with([domain.Ticket@31ea9581])
+16 Mar 2021 12:16:35,675 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:35,680 TRACE repository.ArtistRepo 110 getAll - Enter
+16 Mar 2021 12:16:35,680 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:35,680 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:35,680 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:35,681 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:35,681 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:35,831 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:16:35,833 TRACE repository.ArtistRepo 127 getAll - Exit with([Artist{name='Avicii', genre='Dance'}])
+16 Mar 2021 12:16:35,834 TRACE repository.ArtistRepo 133 delete - Enter
+16 Mar 2021 12:16:35,834 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:35,834 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:16:36,032 TRACE repository.ArtistRepo 143 delete - Exit with([])
+16 Mar 2021 12:16:36,033 TRACE repository.ArtistRepo 28 add - Enter saving task Artist{name='Avicii', genre='Dance'}
+16 Mar 2021 12:16:36,033 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,034 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:16:36,117 TRACE repository.ArtistRepo 34 add - Saved 1 instances
+16 Mar 2021 12:16:36,117 TRACE repository.ArtistRepo 39 add - Exit
+16 Mar 2021 12:16:36,118 TRACE repository.ArtistRepo 63 findArtistByGenre - Enter
+16 Mar 2021 12:16:36,118 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,118 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:16:36,119 TRACE repository.ArtistRepo 81 findArtistByGenre - Exit with([Artist{name='Avicii', genre='Dance'}])
+16 Mar 2021 12:16:36,121 INFO  repository.CustomerRepo 22 <init> - Initializing CustomerRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:36,121 TRACE repository.CustomerRepo 86 getAll - Enter
+16 Mar 2021 12:16:36,122 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,122 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:36,122 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:36,122 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:36,123 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:36,124 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:16:36,125 TRACE repository.CustomerRepo 103 getAll - Exit with([domain.Customer@645aa696])
+16 Mar 2021 12:16:36,126 TRACE repository.CustomerRepo 109 delete - Enter
+16 Mar 2021 12:16:36,126 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,127 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:16:36,313 TRACE repository.CustomerRepo 119 delete - Exit with([])
+16 Mar 2021 12:16:36,313 TRACE repository.CustomerRepo 28 add - Enter saving task domain.Customer@413d1baf
+16 Mar 2021 12:16:36,314 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,314 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:16:36,387 TRACE repository.CustomerRepo 34 add - Saved 1 instances
+16 Mar 2021 12:16:36,388 TRACE repository.CustomerRepo 39 add - Exit
+16 Mar 2021 12:16:36,388 TRACE repository.CustomerRepo 86 getAll - Enter
+16 Mar 2021 12:16:36,388 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,388 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:16:36,389 TRACE repository.CustomerRepo 103 getAll - Exit with([domain.Customer@16eb3ea3])
+16 Mar 2021 12:16:36,391 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:36,391 TRACE repository.FestivalRepo 134 getAll - Enter
+16 Mar 2021 12:16:36,391 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,391 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:36,392 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:36,392 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:36,392 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:36,392 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:16:36,393 TRACE repository.FestivalRepo 80 getArtist - Enter
+16 Mar 2021 12:16:36,393 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,393 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:16:36,394 TRACE repository.FestivalRepo 97 getArtist - Exit
+16 Mar 2021 12:16:36,394 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@57a78e3])
+16 Mar 2021 12:16:36,394 TRACE repository.FestivalRepo 155 delete - Enter
+16 Mar 2021 12:16:36,395 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,395 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:16:36,497 TRACE repository.FestivalRepo 165 delete - Exit with([])
+16 Mar 2021 12:16:36,497 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:36,497 TRACE repository.ArtistRepo 87 getOne - Enter
+16 Mar 2021 12:16:36,497 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,498 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:36,498 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:36,498 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:36,498 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:36,499 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6fa51cd4)
+16 Mar 2021 12:16:36,499 TRACE repository.ArtistRepo 104 getOne - Exit
+16 Mar 2021 12:16:36,499 TRACE repository.FestivalRepo 48 add - Enter saving task domain.Festival@2767e23c
+16 Mar 2021 12:16:36,499 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,500 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:16:36,580 TRACE repository.FestivalRepo 53 add - Saved 1 instances
+16 Mar 2021 12:16:36,581 TRACE repository.FestivalRepo 58 add - Exit
+16 Mar 2021 12:16:36,581 TRACE repository.FestivalRepo 134 getAll - Enter
+16 Mar 2021 12:16:36,581 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,581 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:16:36,582 TRACE repository.FestivalRepo 80 getArtist - Enter
+16 Mar 2021 12:16:36,582 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,583 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:16:36,583 TRACE repository.FestivalRepo 97 getArtist - Exit
+16 Mar 2021 12:16:36,583 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@cecf639])
+16 Mar 2021 12:16:36,586 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:36,587 TRACE repository.TicketRepo 169 getAll - Enter
+16 Mar 2021 12:16:36,587 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,587 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:36,587 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:36,587 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:36,588 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:36,588 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,589 TRACE repository.TicketRepo 112 getFestival - Enter
+16 Mar 2021 12:16:36,589 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,589 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,590 TRACE repository.TicketRepo 134 getFestival - Exit
+16 Mar 2021 12:16:36,590 TRACE repository.TicketRepo 91 getClient - Enter
+16 Mar 2021 12:16:36,590 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,590 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,590 TRACE repository.TicketRepo 108 getClient - Exit
+16 Mar 2021 12:16:36,590 TRACE repository.TicketRepo 184 getAll - Exit with([domain.Ticket@6e9a5ed8])
+16 Mar 2021 12:16:36,591 TRACE repository.TicketRepo 190 delete - Enter
+16 Mar 2021 12:16:36,591 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,591 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,666 TRACE repository.TicketRepo 200 delete - Exit with([])
+16 Mar 2021 12:16:36,666 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:36,666 TRACE repository.ArtistRepo 87 getOne - Enter
+16 Mar 2021 12:16:36,667 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,667 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:36,667 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:36,667 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:36,667 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:36,668 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+16 Mar 2021 12:16:36,668 TRACE repository.ArtistRepo 104 getOne - Exit
+16 Mar 2021 12:16:36,668 INFO  repository.CustomerRepo 22 <init> - Initializing CustomerRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:16:36,668 TRACE repository.CustomerRepo 63 getOne - Enter
+16 Mar 2021 12:16:36,668 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,668 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:16:36,669 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:16:36,669 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:16:36,669 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:16:36,670 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5890e879)
+16 Mar 2021 12:16:36,671 TRACE repository.CustomerRepo 80 getOne - Exit
+16 Mar 2021 12:16:36,671 TRACE repository.TicketRepo 38 add - Enter saving task domain.Ticket@6440112d
+16 Mar 2021 12:16:36,671 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,671 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,762 TRACE repository.TicketRepo 43 add - Saved 1 instances
+16 Mar 2021 12:16:36,763 TRACE repository.TicketRepo 48 add - Exit
+16 Mar 2021 12:16:36,763 TRACE repository.TicketRepo 169 getAll - Enter
+16 Mar 2021 12:16:36,764 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,764 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,764 TRACE repository.TicketRepo 112 getFestival - Enter
+16 Mar 2021 12:16:36,765 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,765 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,765 TRACE repository.TicketRepo 134 getFestival - Exit
+16 Mar 2021 12:16:36,766 TRACE repository.TicketRepo 91 getClient - Enter
+16 Mar 2021 12:16:36,766 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:16:36,766 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:16:36,766 TRACE repository.TicketRepo 108 getClient - Exit
+16 Mar 2021 12:16:36,766 TRACE repository.TicketRepo 184 getAll - Exit with([domain.Ticket@31ea9581])
+16 Mar 2021 12:22:54,461 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:55,944 TRACE repository.ArtistRepo 110 getAll - Enter
+16 Mar 2021 12:22:55,944 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:55,944 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:55,945 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:55,945 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:55,945 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,118 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:22:56,121 TRACE repository.ArtistRepo 127 getAll - Exit with([Artist{name='Avicii', genre='Dance'}])
+16 Mar 2021 12:22:56,122 TRACE repository.ArtistRepo 133 delete - Enter
+16 Mar 2021 12:22:56,123 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,123 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:22:56,260 TRACE repository.ArtistRepo 143 delete - Exit with([])
+16 Mar 2021 12:22:56,261 TRACE repository.ArtistRepo 28 add - Enter saving task Artist{name='Avicii', genre='Dance'}
+16 Mar 2021 12:22:56,262 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,262 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:22:56,344 TRACE repository.ArtistRepo 34 add - Saved 1 instances
+16 Mar 2021 12:22:56,345 TRACE repository.ArtistRepo 39 add - Exit
+16 Mar 2021 12:22:56,345 TRACE repository.ArtistRepo 63 findArtistByGenre - Enter
+16 Mar 2021 12:22:56,345 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,346 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@79e4c792)
+16 Mar 2021 12:22:56,346 TRACE repository.ArtistRepo 81 findArtistByGenre - Exit with([Artist{name='Avicii', genre='Dance'}])
+16 Mar 2021 12:22:56,349 INFO  repository.CustomerRepo 22 <init> - Initializing CustomerRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:56,349 TRACE repository.CustomerRepo 86 getAll - Enter
+16 Mar 2021 12:22:56,349 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,349 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:56,350 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:56,350 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:56,350 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,351 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:22:56,352 TRACE repository.CustomerRepo 103 getAll - Exit with([domain.Customer@645aa696])
+16 Mar 2021 12:22:56,353 TRACE repository.CustomerRepo 109 delete - Enter
+16 Mar 2021 12:22:56,354 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,354 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:22:56,430 TRACE repository.CustomerRepo 119 delete - Exit with([])
+16 Mar 2021 12:22:56,430 TRACE repository.CustomerRepo 28 add - Enter saving task domain.Customer@413d1baf
+16 Mar 2021 12:22:56,430 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,430 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:22:56,503 TRACE repository.CustomerRepo 34 add - Saved 1 instances
+16 Mar 2021 12:22:56,504 TRACE repository.CustomerRepo 39 add - Exit
+16 Mar 2021 12:22:56,504 TRACE repository.CustomerRepo 86 getAll - Enter
+16 Mar 2021 12:22:56,504 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,504 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@cc43f62)
+16 Mar 2021 12:22:56,505 TRACE repository.CustomerRepo 103 getAll - Exit with([domain.Customer@16eb3ea3])
+16 Mar 2021 12:22:56,510 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:56,511 TRACE repository.FestivalRepo 134 getAll - Enter
+16 Mar 2021 12:22:56,511 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,512 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:56,512 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:56,512 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:56,512 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,513 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:22:56,514 TRACE repository.FestivalRepo 80 getArtist - Enter
+16 Mar 2021 12:22:56,514 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,514 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:22:56,514 TRACE repository.FestivalRepo 97 getArtist - Exit
+16 Mar 2021 12:22:56,514 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@57a78e3])
+16 Mar 2021 12:22:56,515 TRACE repository.FestivalRepo 155 delete - Enter
+16 Mar 2021 12:22:56,515 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,516 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:22:56,589 TRACE repository.FestivalRepo 165 delete - Exit with([])
+16 Mar 2021 12:22:56,589 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:56,590 TRACE repository.ArtistRepo 87 getOne - Enter
+16 Mar 2021 12:22:56,590 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,590 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:56,591 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:56,591 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:56,591 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,592 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6fa51cd4)
+16 Mar 2021 12:22:56,594 TRACE repository.ArtistRepo 104 getOne - Exit
+16 Mar 2021 12:22:56,595 TRACE repository.FestivalRepo 48 add - Enter saving task domain.Festival@2767e23c
+16 Mar 2021 12:22:56,595 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,596 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:22:56,673 TRACE repository.FestivalRepo 53 add - Saved 1 instances
+16 Mar 2021 12:22:56,673 TRACE repository.FestivalRepo 58 add - Exit
+16 Mar 2021 12:22:56,673 TRACE repository.FestivalRepo 134 getAll - Enter
+16 Mar 2021 12:22:56,674 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,674 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:22:56,674 TRACE repository.FestivalRepo 80 getArtist - Enter
+16 Mar 2021 12:22:56,674 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,674 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@48bb62)
+16 Mar 2021 12:22:56,674 TRACE repository.FestivalRepo 97 getArtist - Exit
+16 Mar 2021 12:22:56,675 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@cecf639])
+16 Mar 2021 12:22:56,676 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:56,676 TRACE repository.TicketRepo 169 getAll - Enter
+16 Mar 2021 12:22:56,677 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,677 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:56,677 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:56,677 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:56,677 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,678 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,678 TRACE repository.TicketRepo 112 getFestival - Enter
+16 Mar 2021 12:22:56,678 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,678 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,679 TRACE repository.TicketRepo 134 getFestival - Exit
+16 Mar 2021 12:22:56,679 TRACE repository.TicketRepo 91 getClient - Enter
+16 Mar 2021 12:22:56,679 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,679 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,679 TRACE repository.TicketRepo 108 getClient - Exit
+16 Mar 2021 12:22:56,679 TRACE repository.TicketRepo 184 getAll - Exit with([domain.Ticket@6e9a5ed8])
+16 Mar 2021 12:22:56,680 TRACE repository.TicketRepo 190 delete - Enter
+16 Mar 2021 12:22:56,680 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,680 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,760 TRACE repository.TicketRepo 200 delete - Exit with([])
+16 Mar 2021 12:22:56,761 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:56,761 TRACE repository.ArtistRepo 87 getOne - Enter
+16 Mar 2021 12:22:56,762 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,762 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:56,762 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:56,762 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:56,762 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,763 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+16 Mar 2021 12:22:56,763 TRACE repository.ArtistRepo 104 getOne - Exit
+16 Mar 2021 12:22:56,763 INFO  repository.CustomerRepo 22 <init> - Initializing CustomerRepo with properties: {jdbc.url=jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db}
+16 Mar 2021 12:22:56,763 TRACE repository.CustomerRepo 63 getOne - Enter
+16 Mar 2021 12:22:56,763 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,764 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+16 Mar 2021 12:22:56,764 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+16 Mar 2021 12:22:56,764 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+16 Mar 2021 12:22:56,764 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+16 Mar 2021 12:22:56,764 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5890e879)
+16 Mar 2021 12:22:56,765 TRACE repository.CustomerRepo 80 getOne - Exit
+16 Mar 2021 12:22:56,765 TRACE repository.TicketRepo 38 add - Enter saving task domain.Ticket@6440112d
+16 Mar 2021 12:22:56,765 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,765 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,843 TRACE repository.TicketRepo 43 add - Saved 1 instances
+16 Mar 2021 12:22:56,843 TRACE repository.TicketRepo 48 add - Exit
+16 Mar 2021 12:22:56,844 TRACE repository.TicketRepo 169 getAll - Enter
+16 Mar 2021 12:22:56,844 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,844 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,844 TRACE repository.TicketRepo 112 getFestival - Enter
+16 Mar 2021 12:22:56,844 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,844 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,845 TRACE repository.TicketRepo 134 getFestival - Exit
+16 Mar 2021 12:22:56,845 TRACE repository.TicketRepo 91 getClient - Enter
+16 Mar 2021 12:22:56,845 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+16 Mar 2021 12:22:56,845 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5b247367)
+16 Mar 2021 12:22:56,845 TRACE repository.TicketRepo 108 getClient - Exit
+16 Mar 2021 12:22:56,845 TRACE repository.TicketRepo 184 getAll - Exit with([domain.Ticket@31ea9581])
+20 Mar 2021 12:05:12,625 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:05:20,324 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:05:20,324 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:05:20,324 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:05:20,325 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... null
+20 Mar 2021 12:05:20,325 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:05:20,325 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:05:20,327 ERROR jdbcUtils.JdbcUtils 41 getNewConnection - java.sql.SQLException: The url cannot be null
+20 Mar 2021 12:05:20,328 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit
+20 Mar 2021 12:07:27,191 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:07:33,833 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:07:33,833 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:07:33,833 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:07:33,833 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:07:33,834 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:07:33,834 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:07:34,168 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3f3813e9)
+20 Mar 2021 12:07:34,173 ERROR repository.AccountRepo 41 getOne - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: account)
+20 Mar 2021 12:07:34,173 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:10:35,165 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:10:37,820 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:10:37,820 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:10:37,820 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:10:37,820 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:10:37,821 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:10:37,821 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:10:38,119 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57db6af2)
+20 Mar 2021 12:10:38,124 ERROR repository.AccountRepo 41 getOne - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+20 Mar 2021 12:10:38,124 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:44:05,972 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:44:05,976 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 12:44:05,977 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 12:44:05,978 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 12:44:05,979 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 12:44:09,358 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:44:09,358 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:44:09,358 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:44:09,358 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:44:09,359 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:44:09,359 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:44:09,651 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6b212919)
+20 Mar 2021 12:44:09,654 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:44:27,515 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:44:27,515 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:44:27,516 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6b212919)
+20 Mar 2021 12:44:27,516 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:45:57,283 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:45:57,287 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 12:45:57,288 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 12:45:57,289 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 12:45:57,290 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 12:46:00,975 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:46:00,975 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:46:00,975 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:46:00,975 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:46:00,975 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:46:00,976 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:46:01,282 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@68c97c48)
+20 Mar 2021 12:46:01,285 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:47:01,187 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:47:01,191 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 12:47:01,192 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 12:47:01,194 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 12:47:01,195 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 12:47:03,315 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:47:03,315 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:47:03,315 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:47:03,316 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:47:03,316 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:47:03,316 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:47:03,623 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@287ac482)
+20 Mar 2021 12:47:03,626 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:50:59,893 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:50:59,896 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 12:50:59,898 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 12:50:59,899 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 12:50:59,900 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 12:51:02,685 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:51:02,685 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:51:02,685 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:51:02,685 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:51:02,686 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:51:02,686 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:51:03,008 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a17f6af)
+20 Mar 2021 12:51:03,011 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:52:06,344 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:52:06,349 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 12:52:06,351 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 12:52:06,352 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 12:52:06,353 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 12:52:09,897 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:52:09,898 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:52:09,898 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:52:09,898 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:52:09,898 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:52:09,898 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:52:10,181 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@45309981)
+20 Mar 2021 12:53:11,226 TRACE repository.AccountRepo 44 getOne - Exit
+20 Mar 2021 12:54:29,776 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 12:54:29,780 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 12:54:29,781 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 12:54:29,782 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 12:54:29,783 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 12:54:33,854 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 12:54:33,854 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:54:33,854 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:54:33,854 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:54:33,855 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:54:33,855 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:54:34,151 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4c584cf6)
+20 Mar 2021 12:54:34,155 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@2301329a)
+20 Mar 2021 12:54:34,164 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 12:54:34,164 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 12:54:34,164 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 12:54:34,164 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 12:54:34,164 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 12:54:34,165 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 12:54:34,165 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@64374445)
+20 Mar 2021 12:54:34,166 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@4e8b5cde)
+20 Mar 2021 13:14:09,936 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:14:09,940 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:14:09,942 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:14:09,943 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:14:09,944 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:14:12,595 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:14:12,595 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:14:12,595 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:14:12,595 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:14:12,596 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:14:12,596 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:14:12,900 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3d79e2d1)
+20 Mar 2021 13:14:12,903 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@5b1f1c6c)
+20 Mar 2021 13:15:16,103 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:15:16,107 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:15:16,109 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:15:16,110 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:15:16,111 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:15:18,287 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:15:18,288 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:18,288 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:15:18,288 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:15:18,288 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:15:18,288 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:15:18,582 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b62333c)
+20 Mar 2021 13:15:18,585 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@35b79c3c)
+20 Mar 2021 13:15:28,039 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:15:28,043 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:15:28,044 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:15:28,045 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:15:28,046 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:15:30,248 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:15:30,248 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:30,248 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:15:30,249 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:15:30,249 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:15:30,249 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:15:30,548 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@d1f51db)
+20 Mar 2021 13:15:30,552 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@1233c43f)
+20 Mar 2021 13:15:30,599 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:15:30,599 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:30,599 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:15:30,599 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:15:30,600 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:15:30,600 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:15:30,600 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@50d1b394)
+20 Mar 2021 13:15:30,601 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@d1c763f)
+20 Mar 2021 13:15:41,075 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:15:41,079 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:15:41,080 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:15:41,081 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:15:41,082 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:15:43,525 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:15:43,525 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:43,526 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:15:43,526 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:15:43,526 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:15:43,526 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:15:43,817 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7620e477)
+20 Mar 2021 13:15:43,820 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@79ff73e2)
+20 Mar 2021 13:15:43,861 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:15:43,861 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:43,861 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:15:43,861 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:15:43,862 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:15:43,862 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:15:43,862 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5ebb868)
+20 Mar 2021 13:15:43,863 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@4b35912d)
+20 Mar 2021 13:15:43,863 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:15:43,863 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:43,863 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:15:43,864 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:15:43,864 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:15:43,864 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:15:43,864 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6b0cab6f)
+20 Mar 2021 13:15:43,865 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:15:43,865 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:15:43,865 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6b0cab6f)
+20 Mar 2021 13:15:43,866 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:15:43,866 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@733870a2])
+20 Mar 2021 13:16:16,726 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:16:16,731 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:16:16,732 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:16:16,734 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:16:16,735 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:16:19,858 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:16:19,858 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:16:19,858 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:16:19,858 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:16:19,858 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:16:19,859 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:16:20,125 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@239498a7)
+20 Mar 2021 13:16:24,409 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@68c59e2)
+20 Mar 2021 13:17:30,324 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:17:30,328 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:17:30,329 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:17:30,331 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:17:30,332 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:17:32,323 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:17:32,323 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:17:32,323 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:17:32,323 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:17:32,324 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:17:32,324 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:17:32,613 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@47f6b1c8)
+20 Mar 2021 13:17:32,616 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@5246f3a5)
+20 Mar 2021 13:19:24,523 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:19:24,527 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:19:24,529 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:19:24,533 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:19:24,536 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:19:26,669 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:19:26,669 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:19:26,669 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:19:26,669 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:19:26,669 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:19:26,671 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:19:26,944 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@490eaec4)
+20 Mar 2021 13:19:26,948 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@3055cd64)
+20 Mar 2021 13:24:10,825 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:24:10,831 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:24:10,832 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:24:10,834 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:24:10,835 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:24:15,840 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:24:15,840 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:24:15,840 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:24:15,840 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:24:15,841 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:24:15,841 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:24:16,117 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@45b2dc84)
+20 Mar 2021 13:24:16,121 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@20bbf082)
+20 Mar 2021 13:24:49,115 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:24:49,118 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:24:49,120 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:24:49,121 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:24:49,122 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:24:52,857 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:24:52,857 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:24:52,857 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:24:52,858 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:24:52,858 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:24:52,858 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:24:53,159 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@43de365c)
+20 Mar 2021 13:24:53,162 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@7210d67e)
+20 Mar 2021 13:25:13,510 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:25:13,515 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:25:13,516 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:25:13,518 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:25:13,519 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:25:16,547 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:25:16,548 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:25:16,548 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:25:16,548 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:25:16,548 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:25:16,548 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:25:16,823 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@183267a1)
+20 Mar 2021 13:25:16,826 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@21334119)
+20 Mar 2021 13:25:43,749 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:25:43,753 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:25:43,754 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:25:43,755 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:25:43,756 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:25:46,402 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:25:46,403 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:25:46,403 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:25:46,403 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:25:46,403 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:25:46,403 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:25:46,704 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@22d0a0a)
+20 Mar 2021 13:25:46,707 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@73a22f79)
+20 Mar 2021 13:26:38,923 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:26:38,927 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:26:38,928 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:26:38,930 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:26:38,931 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:26:41,236 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:26:41,236 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:26:41,236 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:26:41,236 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:26:41,236 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:26:41,237 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:26:41,502 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@239498a7)
+20 Mar 2021 13:26:41,506 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@68c59e2)
+20 Mar 2021 13:27:19,944 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:27:19,949 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:27:19,950 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:27:19,951 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:27:19,953 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:27:23,799 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:27:23,799 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:27:23,799 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:27:23,799 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:27:23,799 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:27:23,800 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:27:24,099 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7585b8a6)
+20 Mar 2021 13:27:24,102 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@662b5cb2)
+20 Mar 2021 13:27:24,141 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:27:24,141 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:27:24,141 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:27:24,142 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:27:24,142 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:27:24,142 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:27:24,143 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@555d1a37)
+20 Mar 2021 13:27:24,144 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@142bbb5c)
+20 Mar 2021 13:27:24,144 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:27:24,144 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:27:24,144 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:27:24,144 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:27:24,144 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:27:24,144 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:27:24,145 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71b440b7)
+20 Mar 2021 13:27:24,146 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:27:24,146 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:27:24,146 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71b440b7)
+20 Mar 2021 13:27:24,146 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:27:24,147 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@73da6838])
+20 Mar 2021 13:28:01,366 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:28:01,371 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:28:01,373 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:28:01,375 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:28:01,377 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:28:03,621 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:28:03,621 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:28:03,621 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:28:03,621 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:28:03,622 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:28:03,622 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:28:03,897 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7b796e06)
+20 Mar 2021 13:28:03,901 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@5f7c12a)
+20 Mar 2021 13:28:56,279 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:28:56,280 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:28:56,281 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:28:56,282 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:28:56,283 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:28:56,284 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:28:56,286 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@28e493c)
+20 Mar 2021 13:28:56,289 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@669e200e)
+20 Mar 2021 13:28:56,290 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:28:56,290 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:28:56,291 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:28:56,292 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:28:56,293 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:28:56,294 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:28:56,295 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ea4ad19)
+20 Mar 2021 13:28:56,298 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:28:56,298 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:28:56,300 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3ea4ad19)
+20 Mar 2021 13:28:56,301 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:28:56,301 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@50e027ae])
+20 Mar 2021 13:30:04,532 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:30:04,536 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:30:04,538 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:30:04,539 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:30:04,541 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:30:07,962 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:30:07,963 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:30:07,963 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:30:07,963 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:30:07,963 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:30:07,963 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:30:08,238 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4bd974a)
+20 Mar 2021 13:30:08,241 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@7f1f7103)
+20 Mar 2021 13:30:08,292 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:30:08,292 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:30:08,292 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:30:08,292 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:30:08,292 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:30:08,293 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:30:08,293 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@27f0719b)
+20 Mar 2021 13:30:08,294 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@31247c29)
+20 Mar 2021 13:30:25,282 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:30:25,282 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:30:25,283 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:30:25,283 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:30:25,284 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:30:25,285 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:30:25,286 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@238629d0)
+20 Mar 2021 13:30:25,288 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:30:25,288 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:30:25,289 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@238629d0)
+20 Mar 2021 13:30:25,290 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:30:25,290 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@427507d1])
+20 Mar 2021 13:32:18,404 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:32:18,410 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:32:18,411 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:32:18,412 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:32:18,413 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:32:21,233 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:32:21,233 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:32:21,233 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:32:21,233 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:32:21,233 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:32:21,233 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:32:21,528 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@34c45edf)
+20 Mar 2021 13:32:21,532 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@170fb15e)
+20 Mar 2021 13:32:21,575 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:32:21,576 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:32:21,576 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:32:21,576 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:32:21,576 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:32:21,576 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:32:21,577 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@599e5aeb)
+20 Mar 2021 13:32:21,578 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@5b95f375)
+20 Mar 2021 13:32:21,578 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:32:21,578 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:32:21,578 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:32:21,578 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:32:21,578 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:32:21,578 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:32:21,579 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@78cad4e8)
+20 Mar 2021 13:32:21,580 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:32:21,580 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:32:21,580 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@78cad4e8)
+20 Mar 2021 13:32:21,580 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:32:21,580 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@697654c8])
+20 Mar 2021 13:33:48,423 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:33:48,427 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:33:48,428 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:33:48,429 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:33:48,430 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:33:50,986 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:33:50,986 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:33:50,986 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:33:50,986 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:33:50,987 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:33:50,987 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:33:51,298 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b62333c)
+20 Mar 2021 13:33:51,303 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@35b79c3c)
+20 Mar 2021 13:33:51,345 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:33:51,345 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:33:51,345 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:33:51,346 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:33:51,346 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:33:51,346 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:33:51,346 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@12416518)
+20 Mar 2021 13:33:51,347 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@2c4d10b3)
+20 Mar 2021 13:33:51,347 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:33:51,347 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:33:51,347 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:33:51,348 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:33:51,348 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:33:51,348 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:33:51,348 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@626a1a4f)
+20 Mar 2021 13:33:51,349 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:33:51,349 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:33:51,350 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@626a1a4f)
+20 Mar 2021 13:33:51,350 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:33:51,350 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@35c28903])
+20 Mar 2021 13:34:12,492 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:34:12,496 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:34:12,498 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:34:12,499 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:34:12,500 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:34:15,775 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:34:15,775 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:34:15,775 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:34:15,775 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:34:15,775 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:34:15,775 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:34:16,040 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@53677d57)
+20 Mar 2021 13:34:16,043 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@7e266465)
+20 Mar 2021 13:34:16,092 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:34:16,093 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:34:16,093 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:34:16,093 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:34:16,093 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:34:16,093 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:34:16,094 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@19b4b9d4)
+20 Mar 2021 13:34:16,095 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@2ee8799)
+20 Mar 2021 13:34:18,810 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:34:18,811 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:34:18,812 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:34:18,813 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:34:18,814 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:34:18,815 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:34:18,817 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@32ca8e53)
+20 Mar 2021 13:34:18,820 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:34:18,820 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:34:18,821 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@32ca8e53)
+20 Mar 2021 13:34:18,822 TRACE repository.FestivalRepo 97 getArtist - Exit
+20 Mar 2021 13:34:18,823 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@25f75332])
+20 Mar 2021 13:35:23,128 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:35:23,132 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:35:23,133 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:35:23,134 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:35:23,135 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:35:25,615 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:35:25,616 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:35:25,616 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:35:25,616 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:35:25,617 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:35:25,617 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:35:25,926 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c246e15)
+20 Mar 2021 13:35:25,929 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@3591c954)
+20 Mar 2021 13:35:25,980 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:35:25,980 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:35:25,980 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:35:25,981 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:35:25,981 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:35:25,981 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:35:25,981 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@72100ccb)
+20 Mar 2021 13:35:25,982 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@62794dca)
+20 Mar 2021 13:35:25,982 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:35:25,982 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:35:25,983 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:35:25,983 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:35:25,983 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:35:25,983 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:35:25,983 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@69022009)
+20 Mar 2021 13:35:25,984 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:35:25,984 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:35:25,985 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@69022009)
+20 Mar 2021 13:35:25,985 TRACE repository.FestivalRepo 97 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:35:25,985 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@14aa4b80])
+20 Mar 2021 13:52:47,226 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:52:47,230 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:52:47,232 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:52:47,233 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:52:47,234 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:52:58,318 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:52:58,318 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:52:58,318 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:52:58,319 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:52:58,319 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:52:58,319 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:52:58,618 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@76de1f0f)
+20 Mar 2021 13:52:58,621 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@320789a5)
+20 Mar 2021 13:52:58,674 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:52:58,674 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:52:58,674 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:52:58,674 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:52:58,675 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:52:58,675 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:52:58,675 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@25a045fc)
+20 Mar 2021 13:52:58,676 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@6d76bdbf)
+20 Mar 2021 13:52:58,676 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:52:58,676 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:52:58,677 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:52:58,677 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:52:58,677 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:52:58,677 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:52:58,677 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4ba0a43)
+20 Mar 2021 13:52:58,678 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:52:58,678 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:52:58,678 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4ba0a43)
+20 Mar 2021 13:52:58,679 TRACE repository.FestivalRepo 97 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:52:58,679 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@64fdc55f])
+20 Mar 2021 13:53:08,130 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:53:08,131 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:08,131 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4ba0a43)
+20 Mar 2021 13:53:08,131 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:53:08,132 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:08,132 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4ba0a43)
+20 Mar 2021 13:53:08,132 TRACE repository.FestivalRepo 97 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:53:08,132 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@7f735097])
+20 Mar 2021 13:53:44,394 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:53:44,398 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:53:44,399 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:53:44,400 INFO  repository.FestivalRepo 29 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:53:44,401 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:53:47,835 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:53:47,835 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:47,835 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:53:47,835 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:53:47,835 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:53:47,836 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:53:48,134 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1b0baf2b)
+20 Mar 2021 13:53:48,138 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@272ee269)
+20 Mar 2021 13:53:48,192 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:53:48,192 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:48,192 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:53:48,192 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:53:48,192 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:53:48,193 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:53:48,193 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6bcc9361)
+20 Mar 2021 13:53:48,194 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@3081d2c)
+20 Mar 2021 13:53:48,194 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:53:48,194 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:48,194 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:53:48,194 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:53:48,195 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:53:48,195 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:53:48,195 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@481171f7)
+20 Mar 2021 13:53:48,196 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:53:48,196 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:48,196 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@481171f7)
+20 Mar 2021 13:53:48,197 TRACE repository.FestivalRepo 97 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:53:48,197 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@11ecfc49])
+20 Mar 2021 13:53:51,826 TRACE repository.FestivalRepo 134 getAll - Enter
+20 Mar 2021 13:53:51,826 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:51,826 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@481171f7)
+20 Mar 2021 13:53:51,827 TRACE repository.FestivalRepo 80 getArtist - Enter
+20 Mar 2021 13:53:51,827 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:53:51,827 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@481171f7)
+20 Mar 2021 13:53:51,827 TRACE repository.FestivalRepo 97 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:53:51,827 TRACE repository.FestivalRepo 149 getAll - Exit with([domain.Festival@3a4177e5])
+20 Mar 2021 13:59:28,285 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+20 Mar 2021 13:59:28,289 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+20 Mar 2021 13:59:28,290 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+20 Mar 2021 13:59:28,291 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+20 Mar 2021 13:59:28,292 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+20 Mar 2021 13:59:30,648 TRACE repository.AccountRepo 27 getOne - Enter
+20 Mar 2021 13:59:30,648 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:59:30,649 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:59:30,649 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:59:30,649 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:59:30,649 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:59:30,949 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@68c97c48)
+20 Mar 2021 13:59:30,952 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@66ec6e5e)
+20 Mar 2021 13:59:31,006 TRACE repository.CustomerRepo 62 getOne - Enter
+20 Mar 2021 13:59:31,007 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:59:31,007 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:59:31,007 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:59:31,007 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:59:31,008 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:59:31,008 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@35fa35d4)
+20 Mar 2021 13:59:31,009 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@2a990e4b)
+20 Mar 2021 13:59:31,009 TRACE repository.FestivalRepo 151 getAll - Enter
+20 Mar 2021 13:59:31,009 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:59:31,009 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2021 13:59:31,009 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+20 Mar 2021 13:59:31,010 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2021 13:59:31,010 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2021 13:59:31,011 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5226c31)
+20 Mar 2021 13:59:31,011 TRACE repository.FestivalRepo 97 getArtist - Enter
+20 Mar 2021 13:59:31,012 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:59:31,012 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5226c31)
+20 Mar 2021 13:59:31,012 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:59:31,012 TRACE repository.FestivalRepo 166 getAll - Exit with([domain.Festival@27800b1b])
+20 Mar 2021 13:59:34,469 TRACE repository.FestivalRepo 22 findByDate - Enter
+20 Mar 2021 13:59:34,469 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:59:34,469 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5226c31)
+20 Mar 2021 13:59:34,471 TRACE repository.FestivalRepo 97 getArtist - Enter
+20 Mar 2021 13:59:34,471 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+20 Mar 2021 13:59:34,471 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5226c31)
+20 Mar 2021 13:59:34,471 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+20 Mar 2021 13:59:34,472 TRACE repository.FestivalRepo 38 findByDate - Exit with([domain.Festival@7e8d4942])
+22 Mar 2021 21:21:01,158 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 21:21:01,163 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 21:21:01,164 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 21:21:01,166 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 21:21:01,167 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 21:21:05,649 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 21:21:05,649 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:21:05,649 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 21:21:05,649 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 21:21:05,649 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 21:21:05,650 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 21:21:05,938 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@584c9b0d)
+22 Mar 2021 21:21:05,941 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@55f0d21b)
+22 Mar 2021 21:21:06,002 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 21:21:06,003 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:21:06,003 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 21:21:06,003 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 21:21:06,003 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 21:21:06,003 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 21:21:06,004 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5c7d20b8)
+22 Mar 2021 21:21:06,005 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@1ce23e89)
+22 Mar 2021 21:21:06,005 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 21:21:06,006 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:21:06,006 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 21:21:06,006 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 21:21:06,006 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 21:21:06,006 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 21:21:06,007 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@785c5210)
+22 Mar 2021 21:21:06,007 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 21:21:06,007 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:21:06,008 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@785c5210)
+22 Mar 2021 21:21:06,008 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 21:21:06,008 TRACE repository.FestivalRepo 166 getAll - Exit with([domain.Festival@17c7c753])
+22 Mar 2021 21:21:41,658 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 21:21:41,658 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:21:41,658 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@785c5210)
+22 Mar 2021 21:21:41,659 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 21:21:41,659 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:21:41,659 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@785c5210)
+22 Mar 2021 21:21:41,660 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 21:21:41,660 TRACE repository.FestivalRepo 38 findByDate - Exit with([domain.Festival@7b541f58])
+22 Mar 2021 21:22:07,221 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 21:22:07,221 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:22:07,221 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@785c5210)
+22 Mar 2021 21:22:07,222 TRACE repository.FestivalRepo 38 findByDate - Exit with([])
+22 Mar 2021 21:41:35,644 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 21:41:35,649 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 21:41:35,650 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 21:41:35,652 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 21:41:35,654 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 21:41:38,454 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 21:41:38,455 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:41:38,455 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 21:41:38,455 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 21:41:38,455 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 21:41:38,455 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 21:41:38,747 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4cd828c6)
+22 Mar 2021 21:41:38,751 TRACE repository.AccountRepo 44 getOne - Exit with(domain.Account@98f2c06)
+22 Mar 2021 21:41:38,810 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 21:41:38,810 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:41:38,810 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 21:41:38,810 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 21:41:38,811 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 21:41:38,811 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 21:41:38,811 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4679a25e)
+22 Mar 2021 21:41:38,812 TRACE repository.CustomerRepo 79 getOne - Exit with(domain.Customer@6d5ce866)
+22 Mar 2021 21:41:38,813 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 21:41:38,813 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:41:38,813 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 21:41:38,813 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 21:41:38,813 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 21:41:38,813 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 21:41:38,814 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@234a5e9d)
+22 Mar 2021 21:41:38,815 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 21:41:38,815 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 21:41:38,816 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@234a5e9d)
+22 Mar 2021 21:41:38,816 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 21:41:38,816 TRACE repository.FestivalRepo 166 getAll - Exit with([domain.Festival@163a802])
+22 Mar 2021 22:01:19,223 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 22:01:19,227 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 22:01:19,228 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 22:01:19,230 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 22:01:19,231 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 22:01:22,224 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 22:01:22,224 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:01:22,224 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:01:22,224 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:01:22,225 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:01:22,225 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:01:22,523 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@27aecbd5)
+22 Mar 2021 22:01:22,526 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 22:01:22,578 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 22:01:22,578 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:01:22,578 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:01:22,578 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:01:22,579 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:01:22,579 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:01:22,579 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5adfadd0)
+22 Mar 2021 22:01:22,580 TRACE repository.CustomerRepo 79 getOne - Exit with(Customer{name='admin', address='adminilor'})
+22 Mar 2021 22:01:22,580 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 22:01:22,581 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:01:22,581 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:01:22,581 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:01:22,581 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:01:22,581 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:01:22,582 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@590bc1c4)
+22 Mar 2021 22:01:22,583 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:01:22,583 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:01:22,583 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@590bc1c4)
+22 Mar 2021 22:01:22,584 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:01:22,591 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}])
+22 Mar 2021 22:21:32,475 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 22:21:32,478 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 22:21:32,479 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 22:21:32,480 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 22:21:32,483 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 22:21:36,186 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 22:21:36,186 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:21:36,186 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:21:36,187 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:21:36,187 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:21:36,187 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:21:36,479 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@566eaf88)
+22 Mar 2021 22:21:36,483 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 22:21:36,537 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 22:21:36,537 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:21:36,537 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:21:36,538 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:21:36,538 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:21:36,538 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:21:36,539 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@30413906)
+22 Mar 2021 22:21:36,539 TRACE repository.CustomerRepo 79 getOne - Exit with(Customer{name='admin', address='adminilor'})
+22 Mar 2021 22:21:36,540 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 22:21:36,540 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:21:36,540 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:21:36,540 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:21:36,540 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:21:36,540 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:21:36,541 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@56598715)
+22 Mar 2021 22:21:36,542 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:21:36,542 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:21:36,542 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@56598715)
+22 Mar 2021 22:21:36,543 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:21:36,551 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}])
+22 Mar 2021 22:21:36,695 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:21:36,696 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:21:36,696 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:21:36,696 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:21:36,696 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:21:36,697 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:21:36,697 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@24f047fe)
+22 Mar 2021 22:21:36,698 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:21:36,712 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:21:36,712 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:21:36,712 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@24f047fe)
+22 Mar 2021 22:21:36,712 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:22:39,374 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 22:22:39,378 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 22:22:39,379 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 22:22:39,381 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 22:22:39,382 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 22:22:41,670 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 22:22:41,671 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:41,671 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:41,671 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:41,671 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:41,671 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:41,963 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@54f1d8b8)
+22 Mar 2021 22:22:41,966 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 22:22:42,021 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 22:22:42,021 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:42,021 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:42,022 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:42,022 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:42,022 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:42,022 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6d68291a)
+22 Mar 2021 22:22:42,023 TRACE repository.CustomerRepo 79 getOne - Exit with(Customer{name='admin', address='adminilor'})
+22 Mar 2021 22:22:42,023 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 22:22:42,024 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:42,024 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:42,024 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:42,024 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:42,024 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:42,025 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1811644a)
+22 Mar 2021 22:22:42,026 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:22:42,026 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:42,026 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1811644a)
+22 Mar 2021 22:22:42,027 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:22:42,034 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}])
+22 Mar 2021 22:22:42,181 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:22:42,181 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:42,182 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:42,182 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:42,182 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:42,182 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:42,183 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57a7de62)
+22 Mar 2021 22:22:42,184 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:22:42,200 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:22:42,200 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:42,201 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@57a7de62)
+22 Mar 2021 22:22:42,201 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:22:51,519 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 22:22:51,523 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 22:22:51,524 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 22:22:51,525 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 22:22:51,526 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 22:22:53,315 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 22:22:53,316 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,316 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:53,316 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:53,316 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:53,316 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:53,605 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@30712f08)
+22 Mar 2021 22:22:53,608 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 22:22:53,662 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 22:22:53,662 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,663 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:53,663 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:53,663 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:53,663 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:53,663 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2b972de0)
+22 Mar 2021 22:22:53,664 TRACE repository.CustomerRepo 79 getOne - Exit with(Customer{name='admin', address='adminilor'})
+22 Mar 2021 22:22:53,665 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 22:22:53,665 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,665 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:53,665 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:53,665 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:53,665 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:53,666 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:22:53,667 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:22:53,667 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,667 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:22:53,668 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:22:53,668 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:22:53,669 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,669 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:22:53,669 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:22:53,677 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-27, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 22:22:53,811 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:22:53,812 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,812 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:22:53,812 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:22:53,812 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:22:53,812 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:22:53,813 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@60f89b9a)
+22 Mar 2021 22:22:53,814 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:22:53,825 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:22:53,826 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,826 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@60f89b9a)
+22 Mar 2021 22:22:53,826 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:22:53,831 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:22:53,832 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:53,832 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@60f89b9a)
+22 Mar 2021 22:22:53,832 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(0)
+22 Mar 2021 22:22:59,823 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:22:59,823 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:22:59,823 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:22:59,824 TRACE repository.FestivalRepo 38 findByDate - Exit with([])
+22 Mar 2021 22:23:14,294 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:23:14,294 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:23:14,294 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:23:14,295 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:23:14,295 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:23:14,295 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:23:14,295 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:23:14,295 TRACE repository.FestivalRepo 38 findByDate - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}])
+22 Mar 2021 22:23:22,708 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:23:22,708 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:23:22,709 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:23:22,709 TRACE repository.FestivalRepo 38 findByDate - Exit with([])
+22 Mar 2021 22:23:34,361 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:23:34,361 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:23:34,361 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:23:34,362 TRACE repository.FestivalRepo 38 findByDate - Exit with([])
+22 Mar 2021 22:23:36,549 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:23:36,550 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:23:36,550 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:23:36,550 TRACE repository.FestivalRepo 38 findByDate - Exit with([])
+22 Mar 2021 22:23:41,190 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:23:41,190 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:23:41,190 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@332ab9c8)
+22 Mar 2021 22:23:41,190 TRACE repository.FestivalRepo 38 findByDate - Exit with([])
+22 Mar 2021 22:24:10,668 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 22:24:10,672 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 22:24:10,673 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 22:24:10,675 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 22:24:10,676 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 22:24:12,596 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 22:24:12,596 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:12,596 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:24:12,596 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:24:12,596 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:24:12,597 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:24:12,885 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@27aecbd5)
+22 Mar 2021 22:24:12,888 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 22:24:12,944 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 22:24:12,944 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:12,944 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:24:12,944 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:24:12,944 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:24:12,944 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:24:12,945 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4da06d68)
+22 Mar 2021 22:24:12,946 TRACE repository.CustomerRepo 79 getOne - Exit with(Customer{name='admin', address='adminilor'})
+22 Mar 2021 22:24:12,946 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 22:24:12,946 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:12,946 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:24:12,946 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:24:12,947 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:24:12,947 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:24:12,947 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b31c8a0)
+22 Mar 2021 22:24:12,948 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:24:12,948 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:12,948 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b31c8a0)
+22 Mar 2021 22:24:12,949 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:24:12,949 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:24:12,949 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:12,950 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b31c8a0)
+22 Mar 2021 22:24:12,950 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:24:12,960 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 22:24:13,099 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:24:13,100 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:13,100 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:24:13,100 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:24:13,100 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:24:13,100 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:24:13,101 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5fc54b79)
+22 Mar 2021 22:24:13,102 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:24:13,123 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:24:13,124 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:13,124 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5fc54b79)
+22 Mar 2021 22:24:13,124 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:24:13,132 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:24:13,133 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:13,133 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5fc54b79)
+22 Mar 2021 22:24:13,134 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(0)
+22 Mar 2021 22:24:16,415 TRACE repository.FestivalRepo 22 findByDate - Enter
+22 Mar 2021 22:24:16,415 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:16,415 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b31c8a0)
+22 Mar 2021 22:24:16,416 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:24:16,416 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:16,416 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b31c8a0)
+22 Mar 2021 22:24:16,416 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:24:16,417 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:24:16,417 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:24:16,417 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b31c8a0)
+22 Mar 2021 22:24:16,417 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:24:16,417 TRACE repository.FestivalRepo 38 findByDate - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 22:32:27,209 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 22:32:27,214 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 22:32:27,215 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 22:32:27,217 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 22:32:27,218 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 22:32:29,748 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 22:32:29,748 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:29,748 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:32:29,749 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:32:29,749 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:32:29,749 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:32:30,044 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2645fc35)
+22 Mar 2021 22:32:30,048 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 22:32:30,104 TRACE repository.CustomerRepo 62 getOne - Enter
+22 Mar 2021 22:32:30,104 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,104 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:32:30,104 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:32:30,105 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:32:30,105 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:32:30,105 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2c56b22c)
+22 Mar 2021 22:32:30,106 TRACE repository.CustomerRepo 79 getOne - Exit with(Customer{name='admin', address='adminilor'})
+22 Mar 2021 22:32:30,106 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 22:32:30,107 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,108 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:32:30,108 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:32:30,108 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:32:30,109 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:32:30,110 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@569ff5fe)
+22 Mar 2021 22:32:30,111 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:32:30,111 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,111 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@569ff5fe)
+22 Mar 2021 22:32:30,111 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:32:30,112 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 22:32:30,112 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,112 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@569ff5fe)
+22 Mar 2021 22:32:30,112 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 22:32:30,121 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 22:32:30,268 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:32:30,269 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,269 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 22:32:30,269 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 22:32:30,269 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 22:32:30,269 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 22:32:30,270 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7f4a4860)
+22 Mar 2021 22:32:30,271 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:32:30,283 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:32:30,284 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,284 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7f4a4860)
+22 Mar 2021 22:32:30,284 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 22:32:30,290 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:32:30,290 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:30,290 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7f4a4860)
+22 Mar 2021 22:32:30,290 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(0)
+22 Mar 2021 22:32:35,091 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 22:32:35,091 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 22:32:35,091 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7f4a4860)
+22 Mar 2021 22:32:35,091 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(0)
+22 Mar 2021 23:07:56,108 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:07:56,112 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:07:56,113 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:07:56,115 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:07:56,116 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:07:58,224 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:07:58,224 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:07:58,224 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:07:58,224 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:07:58,224 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:07:58,224 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:07:58,515 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@27aecbd5)
+22 Mar 2021 23:07:58,518 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:14:30,510 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:14:30,514 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:14:30,515 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:14:30,517 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:14:30,518 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:14:30,518 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:14:33,503 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:14:33,503 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:33,503 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:14:33,503 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:14:33,503 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:14:33,503 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:14:33,801 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2c193c43)
+22 Mar 2021 23:14:33,804 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:14:33,859 TRACE repository.EmployeeRepo 25 getOne - Enter
+22 Mar 2021 23:14:33,859 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:33,860 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:14:33,860 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:14:33,860 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:14:33,860 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:14:33,860 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52118328)
+22 Mar 2021 23:14:33,861 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@38bcf79f)
+22 Mar 2021 23:14:33,861 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 23:14:33,862 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:33,862 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:14:33,862 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:14:33,862 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:14:33,862 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:14:33,862 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55c405e6)
+22 Mar 2021 23:14:33,863 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:14:33,863 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:33,863 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55c405e6)
+22 Mar 2021 23:14:33,864 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:14:33,864 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:14:33,864 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:33,864 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55c405e6)
+22 Mar 2021 23:14:33,865 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:14:33,872 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 23:14:34,016 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 23:14:34,016 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:34,016 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:14:34,016 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:14:34,017 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:14:34,017 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:14:34,017 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4bb7fcc2)
+22 Mar 2021 23:14:34,018 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 23:14:34,031 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 23:14:34,031 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:34,031 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4bb7fcc2)
+22 Mar 2021 23:14:34,031 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 23:14:34,036 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 23:14:34,037 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:34,037 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4bb7fcc2)
+22 Mar 2021 23:14:34,037 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(0)
+22 Mar 2021 23:14:40,693 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 23:14:40,693 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:40,693 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4bb7fcc2)
+22 Mar 2021 23:14:40,693 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(7)
+22 Mar 2021 23:14:49,549 TRACE repository.TicketRepo 206 getSoldSeats - Enter
+22 Mar 2021 23:14:49,549 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:14:49,549 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4bb7fcc2)
+22 Mar 2021 23:14:49,550 TRACE repository.TicketRepo 220 getSoldSeats - Exit with(0)
+22 Mar 2021 23:31:35,332 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:31:35,336 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:31:35,337 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:31:35,338 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:31:35,339 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:31:35,340 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:31:37,637 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:31:37,637 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:37,637 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:31:37,638 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:31:37,638 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:31:37,638 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:31:37,930 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@13912938)
+22 Mar 2021 23:31:37,933 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:31:37,989 TRACE repository.EmployeeRepo 25 getOne - Enter
+22 Mar 2021 23:31:37,989 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:37,989 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:31:37,989 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:31:37,989 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:31:37,990 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:31:37,990 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@16e664e5)
+22 Mar 2021 23:31:37,992 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@53996d96)
+22 Mar 2021 23:31:37,992 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 23:31:37,992 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:37,992 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:31:37,992 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:31:37,993 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:31:37,993 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:31:37,994 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71da3b16)
+22 Mar 2021 23:31:37,995 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:31:37,995 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:37,995 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71da3b16)
+22 Mar 2021 23:31:37,995 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:31:37,996 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:31:37,996 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:37,996 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71da3b16)
+22 Mar 2021 23:31:37,996 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:31:38,003 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 23:31:38,152 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:31:38,152 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:38,152 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:31:38,152 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:31:38,152 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:31:38,153 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:31:38,153 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:31:38,154 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:31:38,165 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:31:38,165 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:38,165 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:31:38,166 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:31:38,170 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:31:38,171 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:38,171 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:31:38,171 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:31:40,416 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:31:40,416 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:40,417 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:31:40,417 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:31:45,857 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:31:45,857 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:31:45,857 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:31:45,857 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:37:41,329 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:37:41,334 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:37:41,335 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:37:41,337 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:37:41,339 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:37:41,340 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:37:44,243 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:37:44,243 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,243 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:37:44,243 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:37:44,244 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:37:44,244 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:37:44,539 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@67a0875d)
+22 Mar 2021 23:37:44,543 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:37:44,604 TRACE repository.EmployeeRepo 25 getOne - Enter
+22 Mar 2021 23:37:44,604 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,604 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:37:44,604 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:37:44,604 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:37:44,605 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:37:44,605 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4c9a7290)
+22 Mar 2021 23:37:44,606 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@74f095e9)
+22 Mar 2021 23:37:44,606 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 23:37:44,606 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,606 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:37:44,607 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:37:44,607 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:37:44,607 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:37:44,608 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7a958fc8)
+22 Mar 2021 23:37:44,608 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:37:44,609 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,609 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7a958fc8)
+22 Mar 2021 23:37:44,610 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:37:44,610 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:37:44,611 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,611 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7a958fc8)
+22 Mar 2021 23:37:44,611 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:37:44,620 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 23:37:44,773 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:37:44,773 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,774 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:37:44,774 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:37:44,774 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:37:44,774 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:37:44,775 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b6a3c4f)
+22 Mar 2021 23:37:44,776 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:37:44,788 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:37:44,788 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,788 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b6a3c4f)
+22 Mar 2021 23:37:44,789 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:37:44,796 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:37:44,796 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:44,797 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b6a3c4f)
+22 Mar 2021 23:37:44,797 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:37:48,937 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:37:48,937 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:37:48,937 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b6a3c4f)
+22 Mar 2021 23:37:48,937 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:45:08,411 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:45:08,417 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:45:08,418 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:45:08,420 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:45:08,422 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:45:08,423 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:47:48,111 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:47:48,117 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:47:48,118 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:47:48,120 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:47:48,121 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:47:48,122 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:47:58,736 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:47:58,740 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:47:58,742 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:47:58,743 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:47:58,745 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:47:58,746 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:50:02,920 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:50:02,925 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:50:02,926 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:50:02,928 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:50:02,929 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:50:02,931 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:51:00,286 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:51:00,290 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:51:00,291 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:51:00,292 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:51:00,293 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:51:00,294 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:52:43,630 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:52:43,630 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:43,630 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:52:43,630 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:52:43,630 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:52:43,631 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:52:43,897 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@41fe809a)
+22 Mar 2021 23:52:43,901 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:52:43,964 TRACE repository.EmployeeRepo 25 getOne - Enter
+22 Mar 2021 23:52:43,964 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:43,965 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:52:43,965 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:52:43,965 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:52:43,965 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:52:43,966 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@bc1220)
+22 Mar 2021 23:52:43,967 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@595d78f8)
+22 Mar 2021 23:52:43,967 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 23:52:43,967 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:43,967 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:52:43,967 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:52:43,968 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:52:43,968 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:52:43,969 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@700ca9b0)
+22 Mar 2021 23:52:43,970 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:52:43,970 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:43,970 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@700ca9b0)
+22 Mar 2021 23:52:43,971 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:52:43,972 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:52:43,972 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:43,972 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@700ca9b0)
+22 Mar 2021 23:52:43,973 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:52:43,981 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 23:52:44,124 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:52:44,124 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:44,125 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:52:44,125 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:52:44,125 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:52:44,125 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:52:44,126 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f737ef0)
+22 Mar 2021 23:52:44,126 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:52:44,136 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:52:44,136 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:44,136 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f737ef0)
+22 Mar 2021 23:52:44,137 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:52:44,144 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:52:44,144 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:44,144 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f737ef0)
+22 Mar 2021 23:52:44,145 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:52:46,241 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:52:46,241 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:52:46,241 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6f737ef0)
+22 Mar 2021 23:52:46,242 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:56:40,980 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:56:40,984 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:56:40,985 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:56:40,986 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:56:40,988 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:56:40,988 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:56:42,827 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:56:42,828 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:42,828 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:56:42,828 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:56:42,828 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:56:42,828 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:56:43,118 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@13912938)
+22 Mar 2021 23:56:43,122 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:56:43,178 TRACE repository.EmployeeRepo 25 getOne - Enter
+22 Mar 2021 23:56:43,179 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,179 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:56:43,179 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:56:43,179 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:56:43,179 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:56:43,180 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@16e664e5)
+22 Mar 2021 23:56:43,180 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@53996d96)
+22 Mar 2021 23:56:43,180 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 23:56:43,181 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,181 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:56:43,181 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:56:43,181 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:56:43,181 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:56:43,182 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71da3b16)
+22 Mar 2021 23:56:43,183 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:56:43,183 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,183 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71da3b16)
+22 Mar 2021 23:56:43,184 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:56:43,184 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:56:43,184 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,184 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@71da3b16)
+22 Mar 2021 23:56:43,185 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:56:43,194 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 23:56:43,348 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:56:43,348 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,348 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:56:43,348 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:56:43,348 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:56:43,349 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:56:43,349 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:56:43,350 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:56:43,360 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:56:43,360 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,360 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:56:43,361 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:56:43,367 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:56:43,367 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:43,367 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:56:43,367 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:56:45,200 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:56:45,200 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:56:45,200 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1d15723a)
+22 Mar 2021 23:56:45,200 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:57:27,811 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:57:27,817 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:57:27,818 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:57:27,820 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:57:27,822 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:57:27,822 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:57:51,144 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+22 Mar 2021 23:57:51,150 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+22 Mar 2021 23:57:51,152 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+22 Mar 2021 23:57:51,153 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+22 Mar 2021 23:57:51,155 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+22 Mar 2021 23:57:51,156 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+22 Mar 2021 23:57:53,291 TRACE repository.AccountRepo 27 getOne - Enter
+22 Mar 2021 23:57:53,292 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,292 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:57:53,292 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:57:53,292 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:57:53,293 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:57:53,556 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1f569e97)
+22 Mar 2021 23:57:53,560 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+22 Mar 2021 23:57:53,621 TRACE repository.EmployeeRepo 25 getOne - Enter
+22 Mar 2021 23:57:53,621 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,622 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:57:53,622 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:57:53,622 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:57:53,622 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:57:53,623 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3dd07f40)
+22 Mar 2021 23:57:53,624 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@4d4495f3)
+22 Mar 2021 23:57:53,624 TRACE repository.FestivalRepo 151 getAll - Enter
+22 Mar 2021 23:57:53,624 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,625 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:57:53,625 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:57:53,625 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:57:53,625 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:57:53,626 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@74dc79ad)
+22 Mar 2021 23:57:53,627 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:57:53,627 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,627 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@74dc79ad)
+22 Mar 2021 23:57:53,628 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:57:53,628 TRACE repository.FestivalRepo 97 getArtist - Enter
+22 Mar 2021 23:57:53,628 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,629 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@74dc79ad)
+22 Mar 2021 23:57:53,629 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+22 Mar 2021 23:57:53,640 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+22 Mar 2021 23:57:53,808 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:57:53,808 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,808 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+22 Mar 2021 23:57:53,808 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+22 Mar 2021 23:57:53,808 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+22 Mar 2021 23:57:53,809 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+22 Mar 2021 23:57:53,809 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b56cdaf)
+22 Mar 2021 23:57:53,810 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:57:53,823 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:57:53,823 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,823 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b56cdaf)
+22 Mar 2021 23:57:53,824 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+22 Mar 2021 23:57:53,834 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:57:53,834 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:53,834 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b56cdaf)
+22 Mar 2021 23:57:53,835 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+22 Mar 2021 23:57:56,016 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+22 Mar 2021 23:57:56,017 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+22 Mar 2021 23:57:56,017 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@b56cdaf)
+22 Mar 2021 23:57:56,017 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+23 Mar 2021 00:01:27,384 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+23 Mar 2021 00:01:27,390 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+23 Mar 2021 00:01:27,392 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+23 Mar 2021 00:01:27,394 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+23 Mar 2021 00:01:27,395 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+23 Mar 2021 00:01:27,396 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+23 Mar 2021 00:01:29,534 TRACE repository.AccountRepo 27 getOne - Enter
+23 Mar 2021 00:01:29,535 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:29,535 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 00:01:29,535 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 00:01:29,535 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 00:01:29,535 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 00:01:29,843 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a184fa7)
+23 Mar 2021 00:01:29,847 TRACE repository.AccountRepo 44 getOne - Exit with(a)
+23 Mar 2021 00:01:29,913 TRACE repository.EmployeeRepo 25 getOne - Enter
+23 Mar 2021 00:01:29,914 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:29,914 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 00:01:29,914 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 00:01:29,914 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 00:01:29,914 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 00:01:29,915 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@30688615)
+23 Mar 2021 00:01:29,916 TRACE repository.EmployeeRepo 41 getOne - Exit with(domain.Employee@783afcd4)
+23 Mar 2021 00:01:29,916 TRACE repository.FestivalRepo 151 getAll - Enter
+23 Mar 2021 00:01:29,916 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:29,916 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 00:01:29,917 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 00:01:29,917 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 00:01:29,917 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 00:01:29,917 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:29,918 TRACE repository.FestivalRepo 97 getArtist - Enter
+23 Mar 2021 00:01:29,918 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:29,918 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:29,919 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+23 Mar 2021 00:01:29,919 TRACE repository.FestivalRepo 97 getArtist - Enter
+23 Mar 2021 00:01:29,919 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:29,920 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:29,920 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+23 Mar 2021 00:01:29,930 TRACE repository.FestivalRepo 166 getAll - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+23 Mar 2021 00:01:30,073 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+23 Mar 2021 00:01:30,073 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:30,073 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 00:01:30,073 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 00:01:30,073 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 00:01:30,074 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 00:01:30,074 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@63afc284)
+23 Mar 2021 00:01:30,075 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+23 Mar 2021 00:01:30,090 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+23 Mar 2021 00:01:30,090 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:30,091 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@63afc284)
+23 Mar 2021 00:01:30,091 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(7)
+23 Mar 2021 00:01:30,100 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+23 Mar 2021 00:01:30,101 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:30,101 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@63afc284)
+23 Mar 2021 00:01:30,102 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+23 Mar 2021 00:01:33,043 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+23 Mar 2021 00:01:33,043 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:33,043 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@63afc284)
+23 Mar 2021 00:01:33,044 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(0)
+23 Mar 2021 00:01:35,552 TRACE repository.FestivalRepo 131 getOne - Enter
+23 Mar 2021 00:01:35,553 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:35,553 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:35,553 TRACE repository.FestivalRepo 97 getArtist - Enter
+23 Mar 2021 00:01:35,554 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:35,554 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:35,554 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+23 Mar 2021 00:01:35,554 TRACE repository.FestivalRepo 145 getOne - Exit with(Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128})
+23 Mar 2021 00:01:35,561 TRACE repository.TicketRepo 36 add - Enter saving task Ticket{festival=TheFest, price=9.870514715341415, client=a, seats=15}
+23 Mar 2021 00:01:35,561 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:35,561 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@63afc284)
+23 Mar 2021 00:01:35,740 TRACE repository.TicketRepo 41 add - Saved 1 instances
+23 Mar 2021 00:01:35,740 TRACE repository.TicketRepo 46 add - Exit
+23 Mar 2021 00:01:41,174 TRACE repository.FestivalRepo 22 findByDate - Enter
+23 Mar 2021 00:01:41,174 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:41,174 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:41,175 TRACE repository.FestivalRepo 97 getArtist - Enter
+23 Mar 2021 00:01:41,175 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:41,175 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:41,175 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+23 Mar 2021 00:01:41,175 TRACE repository.FestivalRepo 97 getArtist - Enter
+23 Mar 2021 00:01:41,176 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:41,176 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f7999c9)
+23 Mar 2021 00:01:41,176 TRACE repository.FestivalRepo 114 getArtist - Exit with(Artist{name='Avicii', genre='Dance'})
+23 Mar 2021 00:01:41,176 TRACE repository.FestivalRepo 38 findByDate - Exit with([Festival{date=2021-03-13, location='Baia Mare', name='FestivalUL', genre='rock', seats=7}, Festival{date=2021-03-13, location='Cluj-Napoca', name='TheFest', genre='Pop', seats=128}])
+23 Mar 2021 00:01:46,197 TRACE repository.TicketRepo 183 getSoldSeats - Enter
+23 Mar 2021 00:01:46,198 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 00:01:46,198 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@63afc284)
+23 Mar 2021 00:01:46,198 TRACE repository.TicketRepo 197 getSoldSeats - Exit with(15)
+23 Mar 2021 01:09:40,365 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+23 Mar 2021 01:09:40,369 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+23 Mar 2021 01:09:40,370 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+23 Mar 2021 01:09:40,371 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+23 Mar 2021 01:09:40,373 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+23 Mar 2021 01:09:40,373 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+23 Mar 2021 01:09:57,143 TRACE repository.ArtistRepo 28 add - Enter saving task Artist{name='UDO', genre='rock'}
+23 Mar 2021 01:09:57,144 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 01:09:57,144 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 01:09:57,144 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 01:09:57,145 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 01:09:57,145 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 01:09:57,466 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f6f3d57)
+23 Mar 2021 01:09:57,634 TRACE repository.ArtistRepo 34 add - Saved 1 instances
+23 Mar 2021 01:09:57,635 TRACE repository.ArtistRepo 39 add - Exit
+23 Mar 2021 01:11:10,607 TRACE repository.ArtistRepo 28 add - Enter saving task Artist{name='Klaus Meine', genre='rock'}
+23 Mar 2021 01:11:10,607 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 01:11:10,607 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f6f3d57)
+23 Mar 2021 01:11:12,436 TRACE repository.ArtistRepo 34 add - Saved 1 instances
+23 Mar 2021 01:11:12,436 TRACE repository.ArtistRepo 39 add - Exit
+23 Mar 2021 10:13:09,229 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+23 Mar 2021 10:13:09,336 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+23 Mar 2021 10:13:09,339 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+23 Mar 2021 10:13:09,342 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+23 Mar 2021 10:13:09,345 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+23 Mar 2021 10:13:09,346 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+23 Mar 2021 10:16:31,335 TRACE repository.ArtistRepo 28 add - Enter saving task Artist{name='Lzzy Hale', genre='rock'}
+23 Mar 2021 10:16:31,336 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:16:31,336 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 10:16:31,336 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 10:16:31,337 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 10:16:31,337 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 10:16:31,688 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3f503284)
+23 Mar 2021 10:16:33,515 TRACE repository.ArtistRepo 34 add - Saved 1 instances
+23 Mar 2021 10:16:33,515 TRACE repository.ArtistRepo 39 add - Exit
+23 Mar 2021 10:17:18,434 TRACE repository.ArtistRepo 87 getOne - Enter
+23 Mar 2021 10:17:18,434 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:17:18,435 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3f503284)
+23 Mar 2021 10:17:18,444 TRACE repository.ArtistRepo 104 getOne - Exit with(Artist{name='Lzzy Hale', genre='rock'})
+23 Mar 2021 10:17:18,455 TRACE repository.FestivalRepo 65 add - Enter saving task Festival{date=2023-04-01, location='Bucuresti', name='Joks', genre='Rock', seats=2000}
+23 Mar 2021 10:17:18,455 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:17:18,456 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 10:17:18,456 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 10:17:18,456 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 10:17:18,456 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 10:17:18,457 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@38d2cbef)
+23 Mar 2021 10:17:18,714 TRACE repository.FestivalRepo 70 add - Saved 1 instances
+23 Mar 2021 10:17:18,714 TRACE repository.FestivalRepo 75 add - Exit
+23 Mar 2021 10:17:24,627 TRACE repository.ArtistRepo 87 getOne - Enter
+23 Mar 2021 10:17:24,628 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:17:24,628 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3f503284)
+23 Mar 2021 10:17:24,629 TRACE repository.ArtistRepo 104 getOne - Exit
+23 Mar 2021 10:17:24,629 TRACE repository.FestivalRepo 65 add - Enter saving task Festival{date=2023-04-01, location='Bucuresti', name='Joks', genre='Rock', seats=2000}
+23 Mar 2021 10:17:24,629 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:17:24,629 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@38d2cbef)
+23 Mar 2021 10:17:24,889 TRACE repository.FestivalRepo 70 add - Saved 1 instances
+23 Mar 2021 10:17:24,890 TRACE repository.FestivalRepo 75 add - Exit
+23 Mar 2021 10:23:40,671 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+23 Mar 2021 10:23:40,675 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+23 Mar 2021 10:23:40,676 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+23 Mar 2021 10:23:40,677 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+23 Mar 2021 10:23:40,679 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+23 Mar 2021 10:23:40,679 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+23 Mar 2021 10:23:43,545 TRACE repository.AccountRepo 27 getOne - Enter
+23 Mar 2021 10:23:43,545 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:23:43,546 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 10:23:43,546 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 10:23:43,546 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 10:23:43,546 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 10:23:43,854 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@419809fb)
+23 Mar 2021 10:23:43,857 TRACE repository.AccountRepo 44 getOne - Exit
+23 Mar 2021 10:26:49,194 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+23 Mar 2021 10:26:49,198 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+23 Mar 2021 10:26:49,199 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+23 Mar 2021 10:26:49,200 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+23 Mar 2021 10:26:49,202 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+23 Mar 2021 10:26:49,203 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+23 Mar 2021 10:26:55,447 TRACE repository.ArtistRepo 87 getOne - Enter
+23 Mar 2021 10:26:55,447 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:26:55,447 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 10:26:55,447 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 10:26:55,448 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 10:26:55,448 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 10:26:55,763 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@78e3378f)
+23 Mar 2021 10:27:22,717 INFO  repository.AccountRepo 21 <init> - Initializing AccountRepo with properties: {}
+23 Mar 2021 10:27:22,721 INFO  repository.CustomerRepo 21 <init> - Initializing CustomerRepo with properties: {}
+23 Mar 2021 10:27:22,722 INFO  repository.ArtistRepo 22 <init> - Initializing ArtistRepo with properties: {}
+23 Mar 2021 10:27:22,724 INFO  repository.FestivalRepo 46 <init> - Initializing FestivalRepo with properties: {}
+23 Mar 2021 10:27:22,725 INFO  repository.TicketRepo 21 <init> - Initializing TicketRepo with properties: {}
+23 Mar 2021 10:27:22,726 INFO  repository.EmployeeRepo 20 <init> - Initializing EmployeeRepo with properties: {}
+23 Mar 2021 10:27:36,635 TRACE repository.ArtistRepo 87 getOne - Enter
+23 Mar 2021 10:27:36,635 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:27:36,636 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 10:27:36,636 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 10:27:36,636 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 10:27:36,637 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 10:27:36,944 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3b125869)
+23 Mar 2021 10:27:36,947 TRACE repository.ArtistRepo 104 getOne - Exit
+23 Mar 2021 10:27:44,735 TRACE repository.ArtistRepo 87 getOne - Enter
+23 Mar 2021 10:27:44,735 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:27:44,735 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3b125869)
+23 Mar 2021 10:27:44,736 TRACE repository.ArtistRepo 104 getOne - Exit with(Artist{name='Avicii', genre='Dance'})
+23 Mar 2021 10:27:44,743 TRACE repository.FestivalRepo 65 add - Enter saving task Festival{date=2021-03-17, location='a', name='b', genre='c', seats=4}
+23 Mar 2021 10:27:44,743 TRACE jdbcUtils.JdbcUtils 48 getConnection - Enter
+23 Mar 2021 10:27:44,743 TRACE jdbcUtils.JdbcUtils 25 getNewConnection - Enter
+23 Mar 2021 10:27:44,743 INFO  jdbcUtils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:D:/An2Sem2/MPP/Lab2MPP/festivals.db
+23 Mar 2021 10:27:44,743 INFO  jdbcUtils.JdbcUtils 31 getNewConnection - user: null
+23 Mar 2021 10:27:44,743 INFO  jdbcUtils.JdbcUtils 32 getNewConnection - pass: null
+23 Mar 2021 10:27:44,744 TRACE jdbcUtils.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6a9d0904)
+23 Mar 2021 10:27:44,918 TRACE repository.FestivalRepo 70 add - Saved 1 instances
+23 Mar 2021 10:27:44,918 TRACE repository.FestivalRepo 75 add - Exit

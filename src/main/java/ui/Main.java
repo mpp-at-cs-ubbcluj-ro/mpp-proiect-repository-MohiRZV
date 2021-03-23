@@ -1,10 +1,14 @@
 package ui;
 
+import controller.Controller;
 import domain.Artist;
 import domain.Customer;
 import domain.Festival;
 import domain.Ticket;
-import org.junit.jupiter.api.Test;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import repository.*;
 
 import java.io.FileReader;
@@ -12,7 +16,10 @@ import java.io.IOException;
 import java.sql.Date;
 import java.util.Properties;
 
-public class Main {
+import javafx.application.Application;
+import service.*;
+
+public class Main extends Application{
     public static void testArtist(){
         Properties props=new Properties();
         try{
@@ -72,7 +79,7 @@ public class Main {
 
 
         Artist artist=new ArtistRepo(props).getOne(1l);
-        Customer customer=new CustomerRepo(props).getOne(1l);
+        String customer="Clientul";
         Festival festival=new Festival(0l,Date.valueOf("2021-03-13"),"Baia Mare","FestivalUL","rock",7l,artist);
         Ticket ticket=new Ticket(0l,festival,15.4,customer,11);
         repo.add(ticket);
@@ -82,11 +89,51 @@ public class Main {
         System.out.println("Toate ticketele din db:");
         repo.getAll().forEach(System.out::println);
     }
+
     public static void main(String[] args) {
-        testArtist();
-        testCustomer();
-        testFestival();
-        testTicket();
+//        testArtist();
+//        testCustomer();
+//        testFestival();
+//        testTicket();
+
+        launch(args);
     }
 
+    Properties props=new Properties();
+    private AccountRepo accountRepo=new AccountRepo(props);
+    private CustomerRepo customerRepo=new CustomerRepo(props);
+    private ArtistRepo artistRepo=new ArtistRepo(props);
+    private FestivalRepo festivalRepo=new FestivalRepo(props);
+    private TicketRepo ticketRepo=new TicketRepo(props);
+    private EmployeeRepo employeeRepo=new EmployeeRepo(props);
+
+    private LoginService loginService=new LoginService(accountRepo);
+    private ArtistService artistService=new ArtistService(artistRepo);
+    private CustomerService customerService=new CustomerService(customerRepo);
+    private FestivalService festivalService=new FestivalService(festivalRepo, artistRepo);
+    private TicketService ticketService=new TicketService(ticketRepo, festivalRepo, customerRepo);
+    private EmployeeService employeeService=new EmployeeService(employeeRepo);
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        try{
+            props.load(new FileReader("bd.properties"));
+        }catch (IOException ex){
+            System.out.println("Cannot find bd.config"+ex);
+        }
+        initView(primaryStage);
+        primaryStage.setWidth(800);
+        primaryStage.show();
+
+    }
+
+
+    private void initView(Stage primaryStage) throws IOException {
+        FXMLLoader loginViewLoader = new FXMLLoader();
+        loginViewLoader.setLocation(getClass().getResource("/views/loginView.fxml"));
+        AnchorPane anchorPane = loginViewLoader.load();
+        primaryStage.setScene(new Scene(anchorPane));
+
+        Controller controller= loginViewLoader.getController();
+        controller.setService(loginService,artistService,customerService,festivalService,ticketService,employeeService);
+    }
 }

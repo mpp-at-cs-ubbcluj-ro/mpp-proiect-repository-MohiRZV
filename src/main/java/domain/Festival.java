@@ -68,4 +68,15 @@ public class Festival extends Entity<Long>{
         this.seats=seats;
         this.artist = artist;
     }
+
+    @Override
+    public String toString() {
+        return "Festival{" +
+                "date=" + date +
+                ", location='" + location + '\'' +
+                ", name='" + name + '\'' +
+                ", genre='" + genre + '\'' +
+                ", seats=" + seats +
+                '}';
+    }
 }

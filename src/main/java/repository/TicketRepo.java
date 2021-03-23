@@ -25,11 +25,9 @@ public class TicketRepo implements TicketRepoInterface {
     private void setPreparedStatement(Ticket entity, PreparedStatement preStmt) throws SQLException {
         preStmt.setLong(1,entity.getFestival().getId());
         preStmt.setDouble(2,entity.getPrice());
-        Customer customer=entity.getClient();
-        if(customer!=null)
-            preStmt.setLong(3,customer.getId());
-        else
-            preStmt.setLong(3,-1);
+        String customer=entity.getClient();
+
+        preStmt.setString(3,customer);
         preStmt.setInt(4,entity.getSeats());
     }
 
@@ -37,7 +35,7 @@ public class TicketRepo implements TicketRepoInterface {
     public Ticket add(Ticket entity) {
         logger.traceEntry("saving task {}",entity);
         Connection con=dbUtils.getConnection();
-        try(PreparedStatement preStmt=con.prepareStatement("insert into ticket (festival_id,price,customer_id,seats) values(?,?,?,?)")){
+        try(PreparedStatement preStmt=con.prepareStatement("insert into ticket (festival_id,price,customer,seats) values(?,?,?,?)")){
             setPreparedStatement(entity,preStmt);
             int result=preStmt.executeUpdate();
             logger.trace("Saved {} instances",result);
@@ -87,27 +85,6 @@ public class TicketRepo implements TicketRepoInterface {
         logger.traceExit(artist);
         return artist;
     }
-    private Customer getClient(Long id) {
-        logger.traceEntry();
-        Connection con=dbUtils.getConnection();
-        Customer customer=null;
-        try(PreparedStatement preStmt=con.prepareStatement("select * from customer where id=?")){
-            preStmt.setLong(1,id);
-            try(ResultSet result=preStmt.executeQuery()){
-                while(result.next()){
-                    Long i=result.getLong("id");
-                    String name=result.getString("name");
-                    String address=result.getString("address");
-                    customer=new Customer(i,name,address);
-                }
-            }
-        }catch (SQLException ex){
-            logger.error(ex);
-            System.err.println("Error DB"+ex);
-        }
-        logger.traceExit(customer);
-        return customer;
-    }
     private Festival getFestival(Long id){
         logger.traceEntry();
         Connection con=dbUtils.getConnection();
@@ -139,9 +116,9 @@ public class TicketRepo implements TicketRepoInterface {
         Integer seats=result.getInt("seats");
         Long festival_id=result.getLong("festival_id");
         Double price=result.getDouble("price");
-        Long client_id=result.getLong("customer_id");
+        String client=result.getString("customer");
 
-        return new Ticket(i,getFestival(festival_id),price,getClient(client_id),seats);
+        return new Ticket(i,getFestival(festival_id),price,client,seats);
     }
 
     @Override
@@ -199,5 +176,25 @@ public class TicketRepo implements TicketRepoInterface {
         }
         logger.traceExit(tickets);
         return null;
+    }
+
+    @Override
+    public Long getSoldSeats(Long festival_id) {
+        logger.traceEntry();
+        Connection con=dbUtils.getConnection();
+        long sold= 0L;
+        try(PreparedStatement preStmt=con.prepareStatement("select sum(seats) as Sold from ticket where festival_id=?;")){
+            preStmt.setLong(1,festival_id);
+            try(ResultSet result=preStmt.executeQuery()){
+                while(result.next()){
+                    sold= result.getLong("Sold");
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB"+ex);
+        }
+        logger.traceExit(sold);
+        return sold;
     }
 }

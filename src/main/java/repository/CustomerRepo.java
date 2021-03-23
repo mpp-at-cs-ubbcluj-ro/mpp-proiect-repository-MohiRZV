@@ -1,7 +1,6 @@
 package repository;
 
 import domain.Customer;
-import domain.Customer;
 import jdbcUtils.JdbcUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

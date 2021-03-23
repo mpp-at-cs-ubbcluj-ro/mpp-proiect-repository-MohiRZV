@@ -3,10 +3,20 @@ package domain;
 public class Ticket extends Entity<Long>{
     private Festival festival;
     private Double price;
-    private Customer client;
+    private String client;
     private Integer seats;
 
-    public Ticket(Long id, Festival festival, Double price, Customer client, Integer seats) {
+    public String getNumeClient() {
+        return numeClient;
+    }
+
+    public void setNumeClient(String numeClient) {
+        this.numeClient = numeClient;
+    }
+
+    private String numeClient;
+
+    public Ticket(Long id, Festival festival, Double price, String client, Integer seats) {
         super(id);
         this.festival = festival;
         this.price = price;
@@ -30,11 +40,11 @@ public class Ticket extends Entity<Long>{
         this.price = price;
     }
 
-    public Customer getClient() {
+    public String getClient() {
         return client;
     }
 
-    public void setClient(Customer client) {
+    public void setClient(String client) {
         this.client = client;
     }
 
@@ -44,5 +54,15 @@ public class Ticket extends Entity<Long>{
 
     public void setSeats(Integer seats) {
         this.seats = seats;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "festival=" + festival.getName() +
+                ", price=" + price +
+                ", client=" + client +
+                ", seats=" + seats +
+                '}';
     }
 }

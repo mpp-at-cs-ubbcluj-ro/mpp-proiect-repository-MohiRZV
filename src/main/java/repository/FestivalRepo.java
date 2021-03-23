@@ -18,8 +18,25 @@ import java.util.Properties;
 public class FestivalRepo implements FestivalRepoInterface {
 
     @Override
-    public Iterable<Artist> findByDate(Date date) {
-        return null;
+    public Iterable<Festival> findByDate(Date date) {
+        logger.traceEntry();
+        Connection con=dbUtils.getConnection();
+        List<Festival> festivals=new ArrayList<>();
+        try(PreparedStatement preStmt=con.prepareStatement("select * from festival where date=?")){
+            preStmt.setDate(1,date);
+            try(ResultSet result=preStmt.executeQuery()){
+                while(result.next()){
+                    Festival festival=getEntityFromResultSet(result);
+                    festivals.add(festival);
+                }
+
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB"+ex);
+        }
+        logger.traceExit(festivals);
+        return festivals;
     }
 
     private final JdbcUtils dbUtils;

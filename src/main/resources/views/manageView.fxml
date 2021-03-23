@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementController">
+   <children>
+      <Button layoutX="82.0" layoutY="152.0" mnemonicParsing="false" onAction="#onBtnAddArtist" text="Add Artist" />
+      <Button layoutX="91.0" layoutY="352.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="367.0" layoutY="282.0" mnemonicParsing="false" onAction="#onBtnAddFestival" text="Add Festival" />
+      <Label layoutX="14.0" layoutY="58.0" text="Name" />
+      <Label layoutX="14.0" layoutY="101.0" text="Genre" />
+      <Label layoutX="286.0" layoutY="45.0" text="Date" />
+      <TextField fx:id="textFieldArtistName" layoutX="66.0" layoutY="54.0" />
+      <TextField fx:id="textFieldArtistGenre" layoutX="66.0" layoutY="97.0" />
+      <Label layoutX="88.0" layoutY="14.0" text="Artist" />
+      <Label layoutX="284.0" layoutY="80.0" text="Location" />
+      <Label layoutX="284.0" layoutY="114.0" text="Name" />
+      <Label layoutX="284.0" layoutY="152.0" text="Genre" />
+      <Label layoutX="285.0" layoutY="200.0" text="Seats" />
+      <Label layoutX="278.0" layoutY="236.0" text="Artist ID" />
+      <TextField fx:id="textFieldFestivalName" layoutX="345.0" layoutY="110.0" />
+      <TextField fx:id="textFieldFestivalGenre" layoutX="345.0" layoutY="148.0" />
+      <TextField fx:id="textFieldFestivalLocation" layoutX="345.0" layoutY="76.0" />
+      <TextField fx:id="textFieldFestivalSeats" layoutX="345.0" layoutY="196.0" />
+      <TextField fx:id="textFieldFestivalArtistID" layoutX="345.0" layoutY="232.0" />
+      <DatePicker fx:id="datePickerFestival" layoutX="345.0" layoutY="42.0" prefHeight="26.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
