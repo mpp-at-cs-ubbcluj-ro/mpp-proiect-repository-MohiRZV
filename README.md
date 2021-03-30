@@ -17,3 +17,5 @@ branch lab4Configs - tema din timpul laboratorului 4
 branch labServiceUICSharp - tema pentru laboratorul 5, cu implementare service si UI in c#
 
 branch labServiceUiJava - tema pentru laboratorul 5, cu implementare service si UI in Java
+
+branch labClientServerJava - tema pentru laboratorul 6, implementare client-server in Java
