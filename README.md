@@ -19,3 +19,5 @@ branch labServiceUICSharp - tema pentru laboratorul 5, cu implementare service s
 branch labServiceUiJava - tema pentru laboratorul 5, cu implementare service si UI in Java
 
 branch labClientServerJava - tema pentru laboratorul 6, implementare client-server in Java
+
+branch labClientServerCSharp - tema pentru laboratorul 7, implementare client-server in C#
