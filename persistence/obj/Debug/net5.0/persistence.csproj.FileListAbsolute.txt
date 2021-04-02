@@ -1,0 +1,16 @@
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\persistence.deps.json
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\persistence.dll
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\ref\persistence.dll
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\persistence.pdb
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\model.dll
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\model.pdb
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.csprojAssemblyReference.cache
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.AssemblyInfoInputs.cache
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.AssemblyInfo.cs
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.csproj.CopyComplete
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.dll
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\ref\persistence.dll
+C:\Users\razva\RiderProjects\LabMPP\persistence\obj\Debug\net5.0\persistence.pdb
+C:\Users\razva\RiderProjects\LabMPP\persistence\bin\Debug\net5.0\persistence.dll.config
