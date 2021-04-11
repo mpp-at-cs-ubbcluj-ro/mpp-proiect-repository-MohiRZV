@@ -1,0 +1,8 @@
+rootProject.name = 'LabMPPSpring'
+include 'Client'
+include 'Model'
+include 'Persistence'
+include 'Server'
+include 'Services'
+include 'CommonCode'
+
