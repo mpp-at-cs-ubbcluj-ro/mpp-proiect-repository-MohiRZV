@@ -21,3 +21,5 @@ branch labServiceUiJava - tema pentru laboratorul 5, cu implementare service si 
 branch labClientServerJava - tema pentru laboratorul 6, implementare client-server in Java
 
 branch labClientServerCSharp - tema pentru laboratorul 7, implementare client-server in C#
+
+branch lab8ClientServerRMIFull - tema pentru laboratorul 8, implementare networking folosind RMI in Java
