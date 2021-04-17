@@ -1,0 +1,12 @@
+C:\Users\razva\RiderProjects\LabRPC\model\bin\Debug\net5.0-windows\model.deps.json
+C:\Users\razva\RiderProjects\LabRPC\model\bin\Debug\net5.0-windows\model.dll
+C:\Users\razva\RiderProjects\LabRPC\model\bin\Debug\net5.0-windows\ref\model.dll
+C:\Users\razva\RiderProjects\LabRPC\model\bin\Debug\net5.0-windows\model.pdb
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.csprojAssemblyReference.cache
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.AssemblyInfoInputs.cache
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.AssemblyInfo.cs
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.csproj.CoreCompileInputs.cache
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.dll
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\ref\model.dll
+C:\Users\razva\RiderProjects\LabRPC\model\obj\Debug\net5.0-windows\model.pdb
