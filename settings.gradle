@@ -1,0 +1,13 @@
+rootProject.name = 'LabRPC'
+include 'Client'
+include 'Client'
+include 'Model'
+include 'Persistence'
+include 'Model'
+include 'Model'
+include 'Model'
+include 'Persistence'
+include 'Services'
+include 'Server'
+include 'NetworkingProtobuff'
+

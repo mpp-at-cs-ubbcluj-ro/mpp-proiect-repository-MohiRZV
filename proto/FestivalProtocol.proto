@@ -1,0 +1,50 @@
+syntax="proto3";
+package protobuffprotocol;
+
+message Account{
+  string password=1;
+  string username=2;
+  string name=3;
+}
+
+message FestivalDTO{
+  int64 festivalID=1;
+  string name=2;
+  string date=3;
+  string location=4;
+  int64 seats=5;
+  int64 soldSeats=6;
+}
+
+message TicketDTO{
+  int32 festivalID=1;
+  int64 seats=2;
+  string client=3;
+}
+
+message Request{
+  enum Type {Unkown=0; Login = 1; Logout = 2; SearchByDate = 3; SellTicket = 4;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+
+  Account user = 2;
+  repeated FestivalDTO festivals = 3;
+  string date = 4;
+  TicketDTO ticket = 5;
+
+}
+
+message Response{
+  enum Type {Unkown=0; Login = 1; Logout = 2; SearchByDate = 3; SellTicket = 4; Ok = 5; Error = 6;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  string error = 2;
+  Account user = 3 ;
+  repeated FestivalDTO festivals = 4;
+  TicketDTO ticket = 5;
+}
