@@ -23,3 +23,5 @@ branch labClientServerJava - tema pentru laboratorul 6, implementare client-serv
 branch labClientServerCSharp - tema pentru laboratorul 7, implementare client-server in C#
 
 branch lab8ClientServerRMIFull - tema pentru laboratorul 8, implementare networking folosind RMI in Java
+
+branch lab9ClientProtobufJava si lab9ServerProtobufCSharp - tema pentru laboratorul 9, cu implementare server in c# si client in java, folosit protobuf
