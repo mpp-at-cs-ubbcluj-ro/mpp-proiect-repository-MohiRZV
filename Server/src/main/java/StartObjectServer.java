@@ -23,7 +23,7 @@ public class StartObjectServer {
             return;
         }
         EmployeeRepo userRepo=new EmployeeRepo(serverProps);
-        ArtistRepo artistRepo=new ArtistRepo(serverProps);
+        ArtistRepoHibernate artistRepo=new ArtistRepoHibernate(serverProps);
         FestivalRepo festivalRepo=new FestivalRepo(serverProps);
         TicketRepo ticketRepo=new TicketRepo(serverProps);
 

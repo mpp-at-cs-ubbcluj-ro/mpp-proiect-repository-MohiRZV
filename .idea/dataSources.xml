@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="server" uuid="ac265189-29ec-43ab-b1e1-f01895a2d674">
+    <data-source source="LOCAL" name="festivals.db" uuid="e3bc9ff0-fabc-4891-8756-9cfd59024f9a">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>jdbc.properties
-
-D:/An2Sem2/MPP/LabMPP/Server/src/main/resources/server.properties</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../Lab2MPP/festivals.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\An2Sem2\MPP\Lab2MPP\festivals.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="festivals" uuid="54db0ddc-4906-4c39-b154-bf163823e4c4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\An2Sem2\MPP\LabMPP\festivals.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

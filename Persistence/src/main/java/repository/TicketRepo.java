@@ -6,6 +6,8 @@ import domain.Ticket;
 import jdbcUtils.JdbcUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -65,23 +67,31 @@ public class TicketRepo implements TicketRepoInterface {
 
     private Artist getArtist(Long id){
         logger.traceEntry();
-        Connection con=dbUtils.getConnection();
-        Artist artist=null;
-        try(PreparedStatement preStmt=con.prepareStatement("select * from artist where id=?")){
-            preStmt.setLong(1,id);
-            try(ResultSet result=preStmt.executeQuery()){
-                while(result.next()){
-                    Long i=result.getLong("id");
-                    String name=result.getString("name");
-                    String gen=result.getString("genre");
-                    artist=new Artist(i,name,gen);
+        Artist artist = null;
+        try{
+            Hibernater.initialize();
+            try(Session session = Hibernater.sessionFactory.openSession()) {
+                Transaction tx = null;
+                try {
+                    tx = session.beginTransaction();
+                    artist =
+                            session.createQuery("from artist where id="+id, Artist.class).getSingleResult();
+
+                    System.out.println("artist found:"+artist);
+                    tx.commit();
+                } catch (RuntimeException ex) {
+                    if (tx != null)
+                        tx.rollback();
                 }
             }
-        }catch (SQLException ex){
+        }catch (Exception ex){
             logger.error(ex);
             System.err.println("Error DB"+ex);
         }
-        logger.traceExit(artist);
+        finally {
+            Hibernater.close();
+            logger.traceExit();
+        }
         return artist;
     }
     private Festival getFestival(Long id){

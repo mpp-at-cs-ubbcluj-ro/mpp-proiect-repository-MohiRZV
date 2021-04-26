@@ -1,7 +1,16 @@
+dialect/SQLiteDialect.java
+ dialect.SQLiteDialect
+ dialect.SQLiteDialect$1
+ dialect.SQLiteDialect$2
+ dialect.SQLiteDialect$3
+ dialect.SQLiteDialect$4
+ dialect.SQLiteDialect$SQLiteUniqueDelegate
 jdbcUtils/JdbcUtils.java
  jdbcUtils.JdbcUtils
-repository/FestivalRepo.java
- repository.FestivalRepo
+dialect/identity/SQLiteDialectIdentityColumnSupport.java
+ dialect.identity.SQLiteDialectIdentityColumnSupport
+repository/CustomerRepo.java
+ repository.CustomerRepo
 repository/CustomerRepoInterface.java
  repository.CustomerRepoInterface
 repository/TicketRepoInterface.java
@@ -12,6 +21,8 @@ repository/AccountRepo.java
  repository.AccountRepo
 repository/AccountRepoInterface.java
  repository.AccountRepoInterface
+repository/ArtistRepo.java
+ repository.ArtistRepo
 repository/FestivalRepoInterface.java
  repository.FestivalRepoInterface
 repository/RepositoryInterface.java
@@ -22,9 +33,13 @@ repository/EmployeeRepoInterface.java
  repository.EmployeeRepoInterface
 repository/EmployeeRepo.java
  repository.EmployeeRepo
-repository/ArtistRepo.java
- repository.ArtistRepo
-repository/CustomerRepo.java
- repository.CustomerRepo
+ArtistMain.java
+ ArtistMain
 repository/TicketRepo.java
  repository.TicketRepo
+repository/ArtistRepoHibernate.java
+ repository.ArtistRepoHibernate
+repository/Hibernater.java
+ repository.Hibernater
+repository/FestivalRepo.java
+ repository.FestivalRepo

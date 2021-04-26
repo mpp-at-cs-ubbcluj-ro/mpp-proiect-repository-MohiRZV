@@ -88,8 +88,6 @@ public class MainPageController implements IObserver {
         labelUser.setText(account.getName());
         initModelFestivals();
     }
-    //TODO actualizez in ambele tabele
-    //TODO selectez sa vand bilet din tabelul de search
 
     @FXML
     public void initialize(){

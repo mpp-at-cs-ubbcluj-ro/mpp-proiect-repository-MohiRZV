@@ -6,15 +6,16 @@ import domain.validators.FestivalValidator;
 import domain.validators.ValidationException;
 import domain.validators.Validator;
 import repository.ArtistRepo;
+import repository.ArtistRepoInterface;
 import repository.FestivalRepo;
 
 import java.sql.Date;
 
 public class FestivalService {
     private FestivalRepo festivalRepo;
-    private ArtistRepo artistRepo;
+    private ArtistRepoInterface artistRepo;
     private Validator<Festival> validator=new FestivalValidator();
-    public FestivalService(FestivalRepo festivalRepo, ArtistRepo artistRepo) {
+    public FestivalService(FestivalRepo festivalRepo, ArtistRepoInterface artistRepo) {
         this.festivalRepo = festivalRepo;
         this.artistRepo = artistRepo;
     }

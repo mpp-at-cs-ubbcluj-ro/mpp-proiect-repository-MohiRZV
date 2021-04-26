@@ -5,11 +5,13 @@ import domain.validators.ArtistValidator;
 import domain.validators.ValidationException;
 import domain.validators.Validator;
 import repository.ArtistRepo;
+import repository.ArtistRepoHibernate;
+import repository.ArtistRepoInterface;
 
 public class ArtistService {
-    private ArtistRepo artistRepo;
+    private ArtistRepoInterface artistRepo;
     private Validator<Artist> validator=new ArtistValidator();
-    public ArtistService(ArtistRepo artistRepo) {
+    public ArtistService(ArtistRepoInterface artistRepo) {
         this.artistRepo = artistRepo;
     }
 
