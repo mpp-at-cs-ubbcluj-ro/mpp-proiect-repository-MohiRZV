@@ -27,3 +27,7 @@ branch lab8ClientServerRMIFull - tema pentru laboratorul 8, implementare network
 branch lab9ClientProtobufJava si lab9ServerProtobufCSharp - tema pentru laboratorul 9, cu implementare server in c# si client in java, folosit protobuf
 
 branch lab10Hibernate - tema pentru laboratorul 10, cu implementarea persistentei pentru entitatea Artist folosind Hibernate
+
+branch lab12RESTJava - tema pentru laboratorul 12, cu implementare servicii rest si client de test in Java
+
+branch lab12RESTCSharp - tema pentru laboratorul 12, cu implementare client de test pentru servicii REST in C#
