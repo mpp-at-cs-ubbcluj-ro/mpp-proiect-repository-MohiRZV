@@ -1,0 +1,12 @@
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\LabMPPREST.exe.config
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\LabMPPREST.exe
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\LabMPPREST.pdb
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\Newtonsoft.Json.dll
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\Newtonsoft.Json.xml
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\obj\Debug\LabMPPREST.csprojAssemblyReference.cache
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\obj\Debug\LabMPPREST.csproj.CoreCompileInputs.cache
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\obj\Debug\LabMPPREST.csproj.CopyComplete
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\obj\Debug\LabMPPREST.exe
+C:\Users\razva\source\repos\LabMPPREST\LabMPPREST\obj\Debug\LabMPPREST.pdb
