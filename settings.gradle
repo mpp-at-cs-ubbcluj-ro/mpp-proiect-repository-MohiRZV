@@ -1,0 +1,6 @@
+rootProject.name = 'LabREST'
+include 'Model'
+include 'Persistence'
+include 'RestServices'
+include 'RESTClient'
+
