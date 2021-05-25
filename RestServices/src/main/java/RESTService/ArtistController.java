@@ -10,8 +10,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 import java.util.stream.StreamSupport;
-
+// npx create-react-app an-react-app
 @RestController
+@CrossOrigin
 @RequestMapping("/artists")
 public class ArtistController {
     private ArtistRepo repository = null;

@@ -1,8 +1,8 @@
 RESTService/Main.java
  RESTService.Main
-RESTService/ArtistController.java
- RESTService.ArtistController
-RESTClient/Client.java
- RESTClient.Client
 RESTClient/Main.java
  RESTClient.Main
+RESTClient/Client.java
+ RESTClient.Client
+RESTService/ArtistController.java
+ RESTService.ArtistController
