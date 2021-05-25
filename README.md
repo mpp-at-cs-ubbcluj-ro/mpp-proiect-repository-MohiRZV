@@ -31,3 +31,5 @@ branch lab10Hibernate - tema pentru laboratorul 10, cu implementarea persistente
 branch lab12RESTJava - tema pentru laboratorul 12, cu implementare servicii rest si client de test in Java
 
 branch lab12RESTCSharp - tema pentru laboratorul 12, cu implementare client de test pentru servicii REST in C#
+
+branch lab13RestWeb - tema pentru laboratorul 13, cu implementare servicii rest intr-un client web Js
